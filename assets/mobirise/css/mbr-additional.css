@@ -9930,13 +9930,6 @@ a {
 	background-color: transparent;
 }
 
-.team-members-director .image-wrapper img {
-	width: 100%;
-	object-fit: cover;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px black;
-}
-
 .team-members-director .social-row .soc-item {
 	display: inline-block;
 	text-align: center;
@@ -10043,13 +10036,6 @@ a {
 	box-shadow: 10px 10px 10px black;
 	backdrop-filter: brightness(50%) contrast(71%) blur(10px);
 	background-color: transparent;
-}
-
-.team-members-board .image-wrapper img {
-	width: 100%;
-	object-fit: cover;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px black;
 }
 
 .team-members-board .social-row .soc-item {
@@ -10234,13 +10220,6 @@ a {
 	margin-bottom: 2rem;
 }
 
-.team-members-moderation .image-wrapper img {
-	width: 100%;
-	object-fit: cover;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px black;
-}
-
 .team-members-moderation .social-row .soc-item {
 	display: inline-block;
 	text-align: center;
@@ -10341,13 +10320,6 @@ a {
 	margin-bottom: 2rem;
 }
 
-.team-members-events .image-wrapper img {
-	width: 100%;
-	object-fit: cover;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px black;
-}
-
 .team-members-events .social-row .soc-item {
 	display: inline-block;
 	text-align: center;
@@ -10416,13 +10388,6 @@ a {
 	margin-bottom: 2rem;
 }
 
-.team-members-art .image-wrapper img {
-	width: 100%;
-	object-fit: cover;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px black;
-}
-
 .team-members-art .social-row .soc-item {
 	display: inline-block;
 	text-align: center;
@@ -10486,13 +10451,6 @@ a {
 
 .team-members-former-3d-artists .card:not(:nth-last-child(1)) {
 	margin-bottom: 2rem;
-}
-
-.team-members-former-3d-artists .image-wrapper img {
-	width: 100%;
-	object-fit: cover;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px black;
 }
 
 .team-members-former-3d-artists .social-row .soc-item {
@@ -10913,13 +10871,6 @@ a {
 
 .team-members-website .card:not(:nth-last-child(1)) {
 	margin-bottom: 2rem;
-}
-
-.team-members-website .image-wrapper img {
-	width: 100%;
-	object-fit: cover;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px black;
 }
 
 .team-members-website .social-row .soc-item {

@@ -973,8 +973,16 @@ blockquote {
 }
 
 /* Profile pictures */
-.image-wrapper-wrapper {
+
+.team-card-container .image-wrapper {
 	width: 25%;
+}
+
+.team-card-container .image-wrapper img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px black;
 }
 
 .card-box h5 {
