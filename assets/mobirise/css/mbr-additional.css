@@ -10234,14 +10234,6 @@ a {
 	margin-bottom: 2rem;
 }
 
-.team-members-moderation .card-wrapper {
-	background-color: #232323;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px black;
-	backdrop-filter: brightness(50%) contrast(71%) blur(10px);
-	background-color: transparent;
-}
-
 .team-members-moderation .image-wrapper img {
 	width: 100%;
 	object-fit: cover;
@@ -10349,14 +10341,6 @@ a {
 	margin-bottom: 2rem;
 }
 
-.team-members-events .card-wrapper {
-	background-color: #232323;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px black;
-	backdrop-filter: brightness(50%) contrast(71%) blur(10px);
-	background-color: transparent;
-}
-
 .team-members-events .image-wrapper img {
 	width: 100%;
 	object-fit: cover;
@@ -10432,14 +10416,6 @@ a {
 	margin-bottom: 2rem;
 }
 
-.team-members-art .card-wrapper {
-	background-color: #232323;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px black;
-	backdrop-filter: brightness(50%) contrast(71%) blur(10px);
-	background-color: transparent;
-}
-
 .team-members-art .image-wrapper img {
 	width: 100%;
 	object-fit: cover;
@@ -10510,14 +10486,6 @@ a {
 
 .team-members-former-3d-artists .card:not(:nth-last-child(1)) {
 	margin-bottom: 2rem;
-}
-
-.team-members-former-3d-artists .card-wrapper {
-	background-color: #232323;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px black;
-	backdrop-filter: brightness(50%) contrast(71%) blur(10px);
-	background-color: transparent;
 }
 
 .team-members-former-3d-artists .image-wrapper img {
@@ -10945,14 +10913,6 @@ a {
 
 .team-members-website .card:not(:nth-last-child(1)) {
 	margin-bottom: 2rem;
-}
-
-.team-members-website .card-wrapper {
-	background-color: #232323;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px black;
-	backdrop-filter: brightness(50%) contrast(71%) blur(10px);
-	background-color: transparent;
 }
 
 .team-members-website .image-wrapper img {

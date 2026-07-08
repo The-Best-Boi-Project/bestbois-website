@@ -964,6 +964,14 @@ blockquote {
 
 /* -------- Custom styles for MeetTheTeam -------- */
 
+.team-card-container .card {
+	background-color: #232323;
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px black;
+	backdrop-filter: brightness(50%) contrast(71%) blur(10px);
+	background-color: transparent;
+}
+
 /* Profile pictures */
 .image-wrapper-wrapper {
 	width: 25%;
