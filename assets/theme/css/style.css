@@ -985,19 +985,23 @@ blockquote {
 	box-shadow: 10px 10px 10px black;
 }
 
-.card-box h5 {
+.team-card-container .card-box {
+	flex: 1 0 0%;
+}
+
+.team-card-container .card-box h5 {
 	font-size: 4rem;
 	margin-top: 0.25em;
 }
-.card-box h6 {
+.team-card-container .card-box h6 {
 	font-size: 2rem;
 }
 
 @media (max-width: 991px) {
-	.card-box h5 {
+	.team-card-container .card-box h5 {
 		font-size: 3rem;
 	}
-	.card-box h6 {
+	.team-card-container .card-box h6 {
 		font-size: 1.75rem;
 	}
 }
