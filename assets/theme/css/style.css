@@ -965,17 +965,21 @@ blockquote {
 /* -------- Custom styles for MeetTheTeam -------- */
 
 .team-card-container .card {
+	flex-direction: row;
+	align-items: center;
+	gap: 1.5em;
+
 	background-color: #232323;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px black;
-	backdrop-filter: brightness(50%) contrast(71%) blur(10px);
 	background-color: transparent;
+
+	backdrop-filter: brightness(50%) contrast(71%) blur(10px);
+	box-shadow: 10px 10px 10px black;
+
+	border-radius: 20px;
 }
 
-/* Profile pictures */
-
 .team-card-container .image-wrapper {
-	width: 25%;
+	width: 23%;
 }
 
 .team-card-container .image-wrapper img {
