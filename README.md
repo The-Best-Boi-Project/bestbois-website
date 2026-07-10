@@ -12,8 +12,19 @@ To set up the development environment, run the following command:
 uv sync
 ```
 
-To normalize code formatting, use `black` that's included with project's dev
-dependencies. The configuration is stored in [pyproject.toml](pyproject.toml).
+To normalize code formatting, use `ruff` that's included with project's dev
+dependencies. 
+
+It is recommended to install it as a pre-commit hook so that code is
+automatically checked before committing.
+
+To install the pre-commit hook, run the following command:
+
+```sh
+pre-commit install
+```
+
+The configuration is stored in [pyproject.toml](pyproject.toml).
 
 Run the development server using the following command from the root directory:
 

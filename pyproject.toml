@@ -11,11 +11,13 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "black>=26.5.1",
     "commitizen>=4.16.3",
+    "pre-commit>=4.6.0",
+    "ruff>=0.15.21",
 ]
 
-[tool.black]
-line-length = 80
-skip-string-normalization = true
-skip-magic-trailing-comma = false
+[tool.ruff]
+include = ["pyproject.toml", "app/**/*.py"]
+
+[tool.ruff.format]
+quote-style = "preserve"
