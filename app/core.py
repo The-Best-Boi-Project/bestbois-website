@@ -20,11 +20,6 @@ def team():
     return render_template('team.html.jinja')
 
 
-@core.route('/support-us')
-def support_us():
-    return render_template('support-us.html.jinja')
-
-
 @core.route('/418')
 def tea():
     abort(418)

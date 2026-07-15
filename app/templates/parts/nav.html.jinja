@@ -20,7 +20,7 @@
                     ><a
                         class="navbar-caption text-white text-primary display-5"
                         href="{{ url_for('core.index') }}"
-                        >{{ _("The Bestboi Project") }}</a
+                        >{{ _("The Bestbois") }}</a
                     ></span
                 >
             </div>
@@ -47,163 +47,16 @@
                     class="navbar-nav nav-dropdown nav-right"
                     data-app-modern-menu="true"
                 >
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
                         <a
-                            class="nav-link link text-white dropdown-toggle display-4"
+                            class="nav-link link text-white text-primary display-4"
+                            href="{{ url_for('content.models') }}"
+                            aria-expanded="false"
                             ><span
                                 class="fas fa-fw fa-file-archive mbr-iconfont mbr-iconfont-btn"
                             ></span
                             >{{ _("Models") }}</a
                         >
-                        <div
-                            class="dropdown-menu"
-                            aria-labelledby="dropdown-402"
-                        >
-                            <div class="dropdown">
-                                <a
-                                    class="text-white dropdown-item dropdown-toggle display-4"
-                                    data-toggle="dropdown-submenu"
-                                    href="{{ url_for('content.models') }}"
-                                    ><span
-                                        class="fas fa-fw fa-child mbr-iconfont mbr-iconfont-btn"
-                                    ></span
-                                    >{{ _("Official Models") }}</a
-                                >
-                                <div
-                                    class="dropdown-menu dropdown-submenu"
-                                    aria-labelledby="dropdown-226"
-                                >
-                                    <a
-                                        class="text-white dropdown-item text-primary display-4"
-                                        href="{{ url_for('content.avatar', avatar_type='kemono') }}"
-                                        >{{ _("Besboi Kemono") }}</a
-                                    ><a
-                                        class="text-white dropdown-item text-primary display-4"
-                                        href="{{ url_for('content.avatar', avatar_type='chibi') }}"
-                                        >{{ _("Bestboi Chibi") }}</a
-                                    ><a
-                                        class="text-white dropdown-item text-primary display-4"
-                                        href="{{ url_for('content.avatar', avatar_type='hd') }}"
-                                        >{{ _("Bestboi HD") }}</a
-                                    ><a
-                                        class="text-white dropdown-item text-primary display-4"
-                                        href="{{ url_for('content.avatar', avatar_type='toon') }}"
-                                        >{{ _("Bestboi Toon") }}</a
-                                    ><a
-                                        class="text-white dropdown-item text-primary display-4"
-                                        href="{{ url_for('content.avatar', avatar_type='classic') }}"
-                                        >{{ _("Bestboi Classic") }}</a
-                                    ><a
-                                        class="text-white dropdown-item text-primary display-4"
-                                        href="{{ url_for('content.avatar', avatar_type='low-poly') }}"
-                                        >{{ _("Bestboi Lowpoly") }}</a
-                                    >
-                                </div>
-                            </div>
-                            {#<div class="dropdown">
-                                <a
-                                    class="text-white dropdown-item dropdown-toggle display-4"
-                                    data-toggle="dropdown-submenu"
-                                    data-bs-toggle="dropdown"
-                                    data-bs-auto-close="outside"
-                                    aria-expanded="false"
-                                    ><span
-                                        class="fas fa-fw fa-tshirt mbr-iconfont mbr-iconfont-btn"
-                                    ></span
-                                    >{{ _("Bestboi Outfits") }}</a
-                                >
-                                <div
-                                    class="dropdown-menu dropdown-submenu"
-                                    aria-labelledby="dropdown-808"
-                                >
-                                    <a
-                                        class="text-white dropdown-item text-primary display-4"
-                                        href="{{ url_for('content.clothing') }}"
-                                        >{{ _("Catalogue") }}</a
-                                    >
-                                    <div class="dropdown">
-                                        <a
-                                            class="text-white dropdown-item dropdown-toggle display-4"
-                                            data-toggle="dropdown-submenu"
-                                            data-bs-toggle="dropdown"
-                                            data-bs-auto-close="outside"
-                                            aria-expanded="false"
-                                            >{{ _("Bestboi Chibi") }}</a
-                                        >
-                                        <div
-                                            class="dropdown-menu dropdown-submenu"
-                                            aria-labelledby="dropdown-430"
-                                        >
-                                            <a
-                                                class="text-white dropdown-item text-primary display-4"
-                                                href="{{ url_for('content.clothing', _anchor='slider5-3e') }}"
-                                                >{{ _("Tailbags + Goggles") }}</a
-                                            ><a
-                                                class="text-white dropdown-item text-primary display-4"
-                                                href="{{ url_for('content.clothing', _anchor='slider5-3g') }}"
-                                                >{{ _("Clothing Pack") }}</a
-                                            ><a
-                                                class="text-white dropdown-item text-primary display-4"
-                                                href="{{ url_for('content.clothing', _anchor='slider5-3h') }}"
-                                                >{{ _("Kigurumi") }}</a
-                                            >
-                                        </div>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a
-                                            class="text-white dropdown-item dropdown-toggle display-4"
-                                            data-toggle="dropdown-submenu"
-                                            data-bs-toggle="dropdown"
-                                            data-bs-auto-close="outside"
-                                            aria-expanded="false"
-                                            >{{ _("Bestboi HD") }}</a
-                                        >
-                                        <div
-                                            class="dropdown-menu dropdown-submenu"
-                                            aria-labelledby="dropdown-523"
-                                        >
-                                            <a
-                                                class="text-white dropdown-item text-primary display-4"
-                                                href="{{ url_for('content.clothing', _anchor='slider5-3e') }}"
-                                                >{{ _("Hoodie") }}</a
-                                            ><a
-                                                class="text-white dropdown-item text-primary display-4"
-                                                href="{{ url_for('content.clothing', _anchor='slider5-3g') }}"
-                                                >{{ _("Winter Outfit") }}</a
-                                            ><a
-                                                class="text-white dropdown-item text-primary display-4"
-                                                href="{{ url_for('content.clothing', _anchor='slider5-3h') }}"
-                                                >{{ _("Knight") }}</a
-                                            ><a
-                                                class="text-white dropdown-item display-4"
-                                                >{{ _("Space Trooper") }}</a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>#}
-                            <div class="dropdown">
-                                <a
-                                    class="text-white dropdown-item dropdown-toggle display-4"
-                                    data-toggle="dropdown-submenu"
-                                    aria-expanded="false"
-                                    ><span
-                                        class="fas fa-fw fa-users mbr-iconfont mbr-iconfont-btn"
-                                    ></span
-                                    >{{ _("Community Models") }}</a
-                                >
-                                <div
-                                    class="dropdown-menu dropdown-submenu"
-                                    aria-labelledby="dropdown-720"
-                                >
-                                    <a
-                                        class="text-white dropdown-item text-primary display-4"
-                                        href="{{ url_for('content.avatar', avatar_type='dutchie') }}"
-                                        >{{ _("Bestboi HD Dutch Angel Dragon") }}</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
                     </li>
                     <li class="nav-item">
                         <a
@@ -234,16 +87,6 @@
                                 class="fas fa-fw fa-question-circle mbr-iconfont mbr-iconfont-btn"
                             ></span
                             >{{ _("About") }}</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a
-                            class="nav-link link text-white text-primary display-4"
-                            href="{{ url_for('core.support_us') }}"
-                            ><span
-                                class="fas fa-fw fa-donate mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Support us!") }}</a
                         >
                     </li>
                     <li class="nav-item dropdown">
