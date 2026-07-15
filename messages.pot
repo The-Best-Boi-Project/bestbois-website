@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-07-15 20:21+0300\n"
+"POT-Creation-Date: 2026-07-15 23:43+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -178,7 +178,7 @@ msgstr ""
 msgid "Official Models"
 msgstr ""
 
-#: app/templates/models.html.jinja:48 app/templates/models.html.jinja:470
+#: app/templates/models.html.jinja:48 app/templates/models.html.jinja:467
 msgid "Community Models"
 msgstr ""
 
@@ -192,6 +192,13 @@ msgstr ""
 msgid "Bestboi Kemono"
 msgstr ""
 
+#: app/templates/models.html.jinja:126 app/templates/models.html.jinja:182
+#: app/templates/models.html.jinja:229 app/templates/models.html.jinja:281
+#: app/templates/models.html.jinja:327 app/templates/models.html.jinja:372
+#, python-format
+msgid "Release date: %(date)s"
+msgstr ""
+
 #: app/templates/models.html.jinja:131
 msgid "The newest of the bunch, a cute <b>kemono</b>-styled bestboi!"
 msgstr ""
@@ -199,8 +206,8 @@ msgstr ""
 #: app/templates/avatars/avatar-chibi.html.jinja:68
 #: app/templates/models.html.jinja:141 app/templates/models.html.jinja:197
 #: app/templates/models.html.jinja:244 app/templates/models.html.jinja:296
-#: app/templates/models.html.jinja:343 app/templates/models.html.jinja:390
-#: app/templates/models.html.jinja:506
+#: app/templates/models.html.jinja:342 app/templates/models.html.jinja:387
+#: app/templates/models.html.jinja:503
 msgid "Download"
 msgstr ""
 
@@ -229,7 +236,33 @@ msgstr ""
 msgid "Toonier then ever, presenting to you: The <b>Toon</b> Boi!"
 msgstr ""
 
-#: app/templates/models.html.jinja:475
+#: app/templates/models.html.jinja:322
+msgid "Bestboi Classic"
+msgstr ""
+
+#: app/templates/models.html.jinja:332
+msgid "The model it all began with, the first of 'em!"
+msgstr ""
+
+#: app/templates/models.html.jinja:367
+msgid "Bestboi Low-Poly"
+msgstr ""
+
+#: app/templates/models.html.jinja:377
+msgid ""
+"A <b>low-poly</b> and fully quest-compatible VRChat model in a classic "
+"style reminiscent of old video games."
+msgstr ""
+
+#: app/templates/models.html.jinja:400
+msgid "Previous"
+msgstr ""
+
+#: app/templates/models.html.jinja:409
+msgid "Next"
+msgstr ""
+
+#: app/templates/models.html.jinja:472
 msgid "Models made by talented creators!"
 msgstr ""
 
