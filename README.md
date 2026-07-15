@@ -1,6 +1,6 @@
-# The Bestboi Project Website
+# The Bestbois Website
 
-The official Bestboi Project website.
+The official Bestbois website.
 
 ## Development
 

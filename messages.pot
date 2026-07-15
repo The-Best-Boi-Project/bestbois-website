@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-06-18 22:54+0300\n"
+"POT-Creation-Date: 2026-07-15 20:21+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,20 +18,20 @@ msgstr ""
 "Generated-By: Babel 2.18.0\n"
 
 #: app/templates/base.html.jinja:10 app/templates/index.html.jinja:3
-msgid "Bestboi Project"
+msgid "Bestbois"
 msgstr ""
 
 #: app/templates/index.html.jinja:21 app/templates/parts/nav.html.jinja:23
-msgid "The Bestboi Project"
+msgid "The Bestbois"
 msgstr ""
 
 #: app/templates/index.html.jinja:25 app/templates/lore.html.jinja:25
 msgid ""
-"Welcome to our website! This is the main information home for the Bestboi"
-" Project and Foxdragon species."
+"Welcome to our website! This is the main information home for the "
+"Bestbois and foxdragon species."
 msgstr ""
 
-#: app/templates/index.html.jinja:27 app/templates/lore.html.jinja:27
+#: app/templates/index.html.jinja:27 app/templates/lore.html.jinja:26
 msgid ""
 "You can download our free VRChat models, join our Discord community, "
 "learn more about the project, meet out staff, or view our species' lore "
@@ -44,72 +44,72 @@ msgid "Model Hub"
 msgstr ""
 
 #: app/templates/index.html.jinja:40 app/templates/lore.html.jinja:3
-#: app/templates/parts/nav.html.jinja:216
+#: app/templates/parts/nav.html.jinja:69
 msgid "Lore"
 msgstr ""
 
 #: app/templates/index.html.jinja:48
-msgid "Discord Community"
+msgid "Discord Server"
 msgstr ""
 
 #: app/templates/index.html.jinja:62
-msgid "What is the Bestboi Project?"
+msgid "What is “the Bestbois”?"
 msgstr ""
 
-#: app/templates/index.html.jinja:68
+#: app/templates/index.html.jinja:65
 msgid ""
-"The Bestboi Project is a group primarily based out of VRChat and similar "
-"VR games. We are one of the oldest currently running VRChat furry "
+"“The Bestbois” is a group primarily based out of VRChat and similar VR "
+"games. We are one of the oldest currently running VRChat furry "
 "communities, with ties dating back to early 2017."
 msgstr ""
 
-#: app/templates/index.html.jinja:70
+#: app/templates/index.html.jinja:66
 msgid ""
 "These days we mainly operate out of our community Discord, which is host "
 "to over 2200 members. Despite the big size, the community is tight-knit, "
 "but still very welcoming to newcomers."
 msgstr ""
 
-#: app/templates/index.html.jinja:73
+#: app/templates/index.html.jinja:67
 msgid ""
 "Our models are created by our dedicated Bestboi creation team, funded by "
 "our Patreon and other sources. We are dedicated to creating high-quality,"
 " easy to edit, and fully customizable free models."
 msgstr ""
 
-#: app/templates/index.html.jinja:84
+#: app/templates/index.html.jinja:77
 msgid "You got a friend in me"
 msgstr ""
 
-#: app/templates/index.html.jinja:89
+#: app/templates/index.html.jinja:82
 msgid "Friendship"
 msgstr ""
 
-#: app/templates/index.html.jinja:93
+#: app/templates/index.html.jinja:86
 msgid "Meet new friends!"
 msgstr ""
 
-#: app/templates/index.html.jinja:104
+#: app/templates/index.html.jinja:97
 msgid "4th anniversary"
 msgstr ""
 
-#: app/templates/index.html.jinja:109
+#: app/templates/index.html.jinja:102
 msgid "Events"
 msgstr ""
 
-#: app/templates/index.html.jinja:113
+#: app/templates/index.html.jinja:106
 msgid "Join many of our events such as meetings and movie nights!"
 msgstr ""
 
-#: app/templates/index.html.jinja:124
+#: app/templates/index.html.jinja:117
 msgid "Hell"
 msgstr ""
 
-#: app/templates/index.html.jinja:129
+#: app/templates/index.html.jinja:122
 msgid "Fun"
 msgstr ""
 
-#: app/templates/index.html.jinja:133
+#: app/templates/index.html.jinja:126
 msgid "Experience the funny haha"
 msgstr ""
 
@@ -117,69 +117,68 @@ msgstr ""
 msgid "The Bestboi Lore"
 msgstr ""
 
-#: app/templates/lore.html.jinja:35 app/templates/lore.html.jinja:51
+#: app/templates/lore.html.jinja:34 app/templates/lore.html.jinja:50
 msgid "Book One"
 msgstr ""
 
-#: app/templates/lore.html.jinja:54
+#: app/templates/lore.html.jinja:53
 msgid "This is were it all begins."
 msgstr ""
 
-#: app/templates/lore.html.jinja:55
+#: app/templates/lore.html.jinja:54
 msgid "Click on an image to open it in the viewer for easier reading!"
 msgstr ""
 
-#: app/templates/lore.html.jinja:64 app/templates/lore.html.jinja:69
+#: app/templates/lore.html.jinja:63 app/templates/lore.html.jinja:68
 msgid "Cover"
 msgstr ""
 
-#: app/templates/lore.html.jinja:69 app/templates/lore.html.jinja:84
-#: app/templates/lore.html.jinja:99 app/templates/lore.html.jinja:114
-#: app/templates/lore.html.jinja:129 app/templates/lore.html.jinja:144
-#: app/templates/lore.html.jinja:159 app/templates/lore.html.jinja:174
-#: app/templates/lore.html.jinja:189
+#: app/templates/lore.html.jinja:68 app/templates/lore.html.jinja:83
+#: app/templates/lore.html.jinja:98 app/templates/lore.html.jinja:113
+#: app/templates/lore.html.jinja:128 app/templates/lore.html.jinja:143
+#: app/templates/lore.html.jinja:158 app/templates/lore.html.jinja:173
+#: app/templates/lore.html.jinja:188
 #, python-format
 msgid "Page %(number)i - %(title)s"
 msgstr ""
 
-#: app/templates/lore.html.jinja:79 app/templates/lore.html.jinja:84
+#: app/templates/lore.html.jinja:78 app/templates/lore.html.jinja:83
 msgid "Fox Dragons"
 msgstr ""
 
-#: app/templates/lore.html.jinja:94 app/templates/lore.html.jinja:99
+#: app/templates/lore.html.jinja:93 app/templates/lore.html.jinja:98
 msgid "Anatomy and Traits"
 msgstr ""
 
-#: app/templates/lore.html.jinja:109 app/templates/lore.html.jinja:114
+#: app/templates/lore.html.jinja:108 app/templates/lore.html.jinja:113
 msgid "More Traits"
 msgstr ""
 
-#: app/templates/lore.html.jinja:124 app/templates/lore.html.jinja:129
+#: app/templates/lore.html.jinja:123 app/templates/lore.html.jinja:128
 msgid "Surface Society"
 msgstr ""
 
-#: app/templates/lore.html.jinja:139 app/templates/lore.html.jinja:144
+#: app/templates/lore.html.jinja:138 app/templates/lore.html.jinja:143
 msgid "Surface Society continued"
 msgstr ""
 
-#: app/templates/lore.html.jinja:154 app/templates/lore.html.jinja:159
+#: app/templates/lore.html.jinja:153 app/templates/lore.html.jinja:158
 msgid "Underground Society"
 msgstr ""
 
-#: app/templates/lore.html.jinja:169 app/templates/lore.html.jinja:174
+#: app/templates/lore.html.jinja:168 app/templates/lore.html.jinja:173
 msgid "Lunar Society"
 msgstr ""
 
-#: app/templates/lore.html.jinja:184 app/templates/lore.html.jinja:189
+#: app/templates/lore.html.jinja:183 app/templates/lore.html.jinja:188
 msgid "Geography"
 msgstr ""
 
 #: app/templates/models.html.jinja:34
-msgid "Bestbois"
+msgid "Official Models"
 msgstr ""
 
 #: app/templates/models.html.jinja:48 app/templates/models.html.jinja:470
-#: app/templates/parts/nav.html.jinja:193
 msgid "Community Models"
 msgstr ""
 
@@ -207,7 +206,6 @@ msgstr ""
 
 #: app/templates/avatars/avatar-chibi.html.jinja:52
 #: app/templates/models.html.jinja:166 app/templates/models.html.jinja:177
-#: app/templates/parts/nav.html.jinja:83
 msgid "Bestboi Chibi"
 msgstr ""
 
@@ -216,7 +214,6 @@ msgid "The bestboi we all love, now in a cute <b>chibi</b> and polished style!"
 msgstr ""
 
 #: app/templates/models.html.jinja:213 app/templates/models.html.jinja:224
-#: app/templates/parts/nav.html.jinja:87
 msgid "Bestboi HD"
 msgstr ""
 
@@ -225,7 +222,6 @@ msgid "The third model to join the club! Bestbois in ✨<b>HD</b>✨"
 msgstr ""
 
 #: app/templates/models.html.jinja:265 app/templates/models.html.jinja:276
-#: app/templates/parts/nav.html.jinja:91
 msgid "Bestboi Toon"
 msgstr ""
 
@@ -237,44 +233,7 @@ msgstr ""
 msgid "Models made by talented creators!"
 msgstr ""
 
-#: app/templates/support-us.html.jinja:3
-msgid "Support us"
-msgstr ""
-
-#: app/templates/support-us.html.jinja:23
-msgid "Support the Project"
-msgstr ""
-
-#: app/templates/support-us.html.jinja:44
-#: app/templates/support-us.html.jinja:62
-msgid "Options"
-msgstr ""
-
-#: app/templates/support-us.html.jinja:67
-msgid "Not many but they still mean a lot to us"
-msgstr ""
-
-#: app/templates/parts/footer.html.jinja:27
-#: app/templates/parts/nav.html.jinja:271
-#: app/templates/support-us.html.jinja:76
-msgid "Discord"
-msgstr ""
-
-#: app/templates/support-us.html.jinja:83
-msgid "Long-Term Donations"
-msgstr ""
-
-#: app/templates/support-us.html.jinja:89
-msgid ""
-"Looking to donate long term and get some neat rewards for your support? "
-"Try subscribing on Discord!"
-msgstr ""
-
-#: app/templates/support-us.html.jinja:100
-msgid "Subscribe"
-msgstr ""
-
-#: app/templates/parts/nav.html.jinja:226 app/templates/worlds.html.jinja:3
+#: app/templates/parts/nav.html.jinja:79 app/templates/worlds.html.jinja:3
 msgid "Worlds"
 msgstr ""
 
@@ -444,8 +403,13 @@ msgid "Home Page"
 msgstr ""
 
 #: app/templates/parts/footer.html.jinja:20
-#: app/templates/parts/nav.html.jinja:56
+#: app/templates/parts/nav.html.jinja:58
 msgid "Models"
+msgstr ""
+
+#: app/templates/parts/footer.html.jinja:27
+#: app/templates/parts/nav.html.jinja:114
+msgid "Discord"
 msgstr ""
 
 #: app/templates/parts/nav.html.jinja:14
@@ -456,43 +420,19 @@ msgstr ""
 msgid "Toggle navigation"
 msgstr ""
 
-#: app/templates/parts/nav.html.jinja:70
-msgid "Official Models"
-msgstr ""
-
-#: app/templates/parts/nav.html.jinja:79
-msgid "Besboi Kemono"
-msgstr ""
-
-#: app/templates/parts/nav.html.jinja:95
-msgid "Bestboi Classic"
-msgstr ""
-
-#: app/templates/parts/nav.html.jinja:99
-msgid "Bestboi Lowpoly"
-msgstr ""
-
-#: app/templates/parts/nav.html.jinja:202
-msgid "Bestboi HD Dutch Angel Dragon"
-msgstr ""
-
-#: app/templates/parts/nav.html.jinja:236
+#: app/templates/parts/nav.html.jinja:89
 msgid "About"
 msgstr ""
 
-#: app/templates/parts/nav.html.jinja:246
-msgid "Support us!"
-msgstr ""
-
-#: app/templates/parts/nav.html.jinja:259
+#: app/templates/parts/nav.html.jinja:102
 msgid "Socials"
 msgstr ""
 
-#: app/templates/parts/nav.html.jinja:278
+#: app/templates/parts/nav.html.jinja:121
 msgid "Twitter"
 msgstr ""
 
-#: app/templates/parts/nav.html.jinja:285
+#: app/templates/parts/nav.html.jinja:128
 msgid "YouTube"
 msgstr ""
 

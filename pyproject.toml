@@ -1,7 +1,7 @@
 [project]
 name = "the-best-boi-project"
 version = "4.0.0"
-description = "The official Bestboi Project website."
+description = "The official Bestbois website."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
