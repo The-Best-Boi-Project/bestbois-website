@@ -991,15 +991,6 @@ blockquote {
 	box-shadow: 10px 0 2px rgba(0,0,0,0.5);
 }
 
-.team-card-container .image-wrapper img {
-	width: 100%;
-	object-fit: cover;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px black;
-
-	display: none; /* Temp */
-}
-
 .team-card-container .card-box {
 	display: flex;
 	flex-direction: column;
