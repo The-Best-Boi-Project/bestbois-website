@@ -1,140 +1,50 @@
-{% extends 'base.html.jinja' %}
-
-{% block title %}Bestboi Toon{% endblock %}
-
+{% extends "base.html.jinja" %}
+{% block title %}{{ _("Bestboi Toon") }}{% endblock %}
 {% block content %}
-
-<section
-    data-bs-version="5.1"
-    class="header11 cid-t8hP5Nse0L mbr-fullscreen mbr-parallax-background"
-    id="header11-29"
->
-    {# <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script> #}
-
-    <script
-        type="module"
-        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
-
-    <div
-        class="mbr-overlay"
-        style="opacity: 0.8; background-color: rgb(35, 35, 35)"
-    ></div>
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 image-wrapper">
-                <style>
+    <section data-bs-version="5.1"
+             class="header11 cid-t8hP5Nse0L mbr-fullscreen mbr-parallax-background"
+             id="header11-29">
+        {# <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script> #}
+        <script type="module"
+                src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <div class="mbr-overlay"
+             style="opacity: 0.8;
+                    background-color: rgb(35, 35, 35)"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 image-wrapper">
+                    <style>
                     model-viewer#reveal {
                         --poster-color: transparent;
                     }
-                </style>
-                <model-viewer
-                    id="reveal"
-                    loading="eager"
-                    bounds="tight"
-                    enable-pan=""
-                    src="{{ url_for('static', filename='models/BestboiToon.glb') }}"
-                    camera-controls=""
-                    environment-image="neutral"
-                    poster="{{ url_for('static', filename='img/Toonposter.png') }}"
-                    shadow-intensity="1"
-                >
+                    </style>
+                    <model-viewer id="reveal" loading="eager" bounds="tight" enable-pan="" src="{{ url_for("static", filename="models/toon.glb") }}" camera-controls="" environment-image="neutral" poster="{{ url_for("static", filename="models/toon_poster.png") }}" shadow-intensity="1">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
-                        <script type="module" src="{{ url_for('static', filename='js/progress-bar.js') }}"></script>
+                        <script type="module"
+                                src="{{ url_for("static", filename="js/progress-bar.js") }}"></script>
                     </div>
-                </model-viewer>
-            </div>
-            <div class="col-12 col-md">
-                <div class="text-wrapper text-center">
-                    <h1
-                        class="mbr-section-title mb-3 display-2"
-                    >
-                        <strong>Bestboi Toon</strong>
-                    </h1>
-                    <p class="mbr-text display-7">
+                    </model-viewer>
+                </div>
+                <div class="col-12 col-md">
+                    <div class="text-wrapper text-center">
+                        <h1 class="mbr-section-title mb-3 display-2">
+                            <strong>{{ _("Bestboi Toon") }}</strong>
+                        </h1>
+                        {#<p class="mbr-text display-7">
                         <em>The original bestboi but now more toony</em
                         ><br />You can move the preview on the right!<em
                             ><br
                         /></em>
-                    </p>
-                    <div class="mbr-section-btn mt-3">
-                        <a
-                            class="btn btn-secondary display-7"
-                            href="#features3-2a"
-                            ><span
-                                class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >Download</a
-                        >
-                        <a
-                            class="btn btn-secondary display-7"
-                            href="#features3-2a"
-                            ><span
-                                class="fas fa-fw fa-file mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >Download SPP</a
-                        >
+                    </p>#}
+                        <div class="mbr-section-btn mt-3">
+                            <a class="btn btn-secondary display-7"
+                               href="https://zexc.gumroad.com/l/BestboiToon"><span class="material material-file-download mbr-iconfont mbr-iconfont-btn"></span>{{ _("Download") }}</a>
+                            <a class="btn btn-secondary display-7" href="#"><span class="fas fa-fw fa-file mbr-iconfont mbr-iconfont-btn"></span>{{ _("Download SPP file") }}</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section
-    data-bs-version="5.1"
-    class="features3 cid-t8hP5NVs15"
-    id="features3-2a"
->
-    <div class="container">
-        <div class="mbr-section-head">
-            <h4
-                class="mbr-section-title align-center mb-0 display-2"
-            >
-                <strong>HD Downloads</strong>
-            </h4>
-            <h5
-                class="mbr-section-subtitle align-center mb-0 mt-2 display-5"
-            >
-                All Models are completely free, but please donate if you are
-                able to so we can deliver more content to you!
-            </h5>
-        </div>
-        <div class="row mt-4">
-            <div class="item features-image col-12 col-md-6 col-lg-12">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/toon-ref-2000x1125.png') }}"
-                            alt="HD"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-5">
-                            <strong>Toon (VRChat Ready)</strong>
-                        </h5>
-
-                        <p class="mbr-text mt-3 display-7">
-                            A unity package already preconfigured with the boi
-                            for easy uploading and editing<br />
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a
-                            href="https://zexc.gumroad.com/l/BestboiToon"
-                            class="btn item-btn btn-success display-7"
-                            ><span
-                                class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Download on %(platform)s", platform="Gumroad") }}</a
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+    </section>
 {% endblock %}

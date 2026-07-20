@@ -1,197 +1,164 @@
-{% extends 'base.html.jinja' %}
-
+{% extends "base.html.jinja" %}
 {% block title %}{{ _("Lore") }}{% endblock %}
-
 {% block content %}
-
-<section
-    data-bs-version="5.1"
-    class="header1 cid-t9euwFWVDk mbr-fullscreen mbr-parallax-background"
-    id="header1-33"
->
-    <div
-        class="mbr-overlay"
-        style="opacity: 0.8; background-color: rgb(35, 35, 35)"
-    ></div>
-
-    <div class="align-center container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-12">
-                <h1 class="mbr-section-title mb-3 display-1">
-                    <strong>{{ _("The Bestboi Lore") }}</strong>
-                </h1>
-
-                <p class="mbr-text display-7">
-                    <p>{{ _("Welcome to our website! This is the main information home for the Bestbois and foxdragon species.") }}</p>
-                    <p>{{ _("You can download our free VRChat models, join our Discord community, learn more about the project, meet out staff, or view our species' lore with the links below!") }}</p>
-                </p>
-                <div class="mbr-section-btn mt-3">
-                    <a
-                        class="btn btn-success display-4"
-                        href="#gallery1-3j"
-                    >
-                        <span class="fas fa-fw fa-book mbr-iconfont mbr-iconfont-btn"></span>
-                        {{ _("Book One") }}
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section
-    data-bs-version="5.1"
-    class="gallery1 cid-t9eYBwX6iG"
-    id="gallery1-3j"
->
-    <div class="container-fluid">
-        <div class="mbr-section-head">
-            <h4 class="mbr-section-title align-center mb-0 display-2">
-                <b>{{ _("Book One") }}</b>
-            </h4>
-            <h5 class="mbr-section-subtitle align-center mb-0 mt-2 display-5">
-                {{ _("This is were it all begins.") }}
-                {{ _("Click on an image to open it in the viewer for easier reading!") }}
-            </h5>
-        </div>
-        <div class="row mt-4">
-            <div class="item features-image col-12 col-md-6 col-lg-4 active">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/lore/page-4-1218x1579.png') }}"
-                            alt="{{ _("Cover") }}"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-7">
-                            <b>{{ _("Page %(number)i - %(title)s", number=1, title=_("Cover")) }}</b>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-image col-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/lore/page-5-1217x1579.png') }}"
-                            alt="{{ _("Fox Dragons") }}"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-7">
-                            <b>{{ _("Page %(number)i - %(title)s", number=2, title=_("Fox Dragons")) }}</b>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-image col-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/lore/page-11-1223x1582.png') }}"
-                            alt="{{ _("Anatomy and Traits") }}"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-7">
-                            <b>{{ _("Page %(number)i - %(title)s", number=3, title=_("Anatomy and Traits")) }}</b>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-image col-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/lore/page-10-1218x1582.png') }}"
-                            alt="{{ _("More Traits") }}"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-7">
-                            <b>{{ _("Page %(number)i - %(title)s", number=4, title=_("More Traits")) }}</b>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-image col-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/lore/page-6-1220x1581.png') }}"
-                            alt="{{ _("Surface Society") }}"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-7">
-                            <b>{{ _("Page %(number)i - %(title)s", number=5, title=_("Surface Society")) }}</b>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-image col-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/lore/page-7-1221x1580.png') }}"
-                            alt="{{ _("Surface Society continued") }}"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-7">
-                            <b>{{ _("Page %(number)i - %(title)s", number=6, title=_("Surface Society continued")) }}</b>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-image col-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/lore/page-8-1222x1577.png') }}"
-                            alt="{{ _("Underground Society") }}"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-7">
-                            <b>{{ _("Page %(number)i - %(title)s", number=7, title=_("Underground Society")) }}</b>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-image col-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/lore/page-9-1222x1582.png') }}"
-                            alt="{{ _("Lunar Society") }}"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-7">
-                            <b>{{ _("Page %(number)i - %(title)s", number=8, title=_("Lunar Society")) }}</b>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-image col-12 col-md-6 col-lg-4">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/lore/page-12-1221x1579.png') }}"
-                            alt="{{ _("Geography") }}"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-7">
-                            <b>{{ _("Page %(number)i - %(title)s", number=9, title=_("Geography")) }}</b>
-                        </h5>
+    <section data-bs-version="5.1"
+             class="header1 cid-t9euwFWVDk mbr-fullscreen mbr-parallax-background"
+             id="header1-33">
+        <div class="mbr-overlay"
+             style="opacity: 0.8;
+                    background-color: rgb(35, 35, 35)"></div>
+        <div class="align-center container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-12">
+                    <h1 class="mbr-section-title mb-3 display-1">
+                        <strong>{{ _("The Bestboi Lore") }}</strong>
+                    </h1>
+                    <p class="mbr-text display-7">
+                        <p>{{ _("Welcome to our website! This is the main information home for the Bestbois and foxdragon species.") }}</p>
+                        <p>{{ _("You can download our free VRChat models, join our Discord community, learn more about the project, meet out staff, or view our species' lore with the links below!") }}</p>
+                    </p>
+                    <div class="mbr-section-btn mt-3">
+                        <a class="btn btn-success display-4" href="#gallery1-3j">
+                            <span class="fas fa-fw fa-book mbr-iconfont mbr-iconfont-btn"></span>
+                            {{ _("Book One") }}
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
+    <section data-bs-version="5.1"
+             class="gallery1 cid-t9eYBwX6iG"
+             id="gallery1-3j">
+        <div class="container-fluid">
+            <div class="mbr-section-head">
+                <h4 class="mbr-section-title align-center mb-0 display-2">
+                    <b>{{ _("Book One") }}</b>
+                </h4>
+                <h5 class="mbr-section-subtitle align-center mb-0 mt-2 display-5">
+                    {{ _("This is were it all begins.") }}
+                    {{ _("Click on an image to open it in the viewer for easier reading!") }}
+                </h5>
+            </div>
+            <div class="row mt-4">
+                <div class="item features-image col-12 col-md-6 col-lg-4 active">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/lore/page-4-1218x1579.png") }}"
+                                 alt="{{ _("Cover") }}" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title display-7">
+                                <b>{{ _("Page %(number)i - %(title)s", number=1, title=_("Cover")) }}</b>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-4">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/lore/page-5-1217x1579.png") }}"
+                                 alt="{{ _("Fox Dragons") }}" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title display-7">
+                                <b>{{ _("Page %(number)i - %(title)s", number=2, title=_("Fox Dragons")) }}</b>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-4">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/lore/page-11-1223x1582.png") }}"
+                                 alt="{{ _("Anatomy and Traits") }}" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title display-7">
+                                <b>{{ _("Page %(number)i - %(title)s", number=3, title=_("Anatomy and Traits")) }}</b>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-4">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/lore/page-10-1218x1582.png") }}"
+                                 alt="{{ _("More Traits") }}" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title display-7">
+                                <b>{{ _("Page %(number)i - %(title)s", number=4, title=_("More Traits")) }}</b>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-4">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/lore/page-6-1220x1581.png") }}"
+                                 alt="{{ _("Surface Society") }}" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title display-7">
+                                <b>{{ _("Page %(number)i - %(title)s", number=5, title=_("Surface Society")) }}</b>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-4">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/lore/page-7-1221x1580.png") }}"
+                                 alt="{{ _("Surface Society continued") }}" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title display-7">
+                                <b>{{ _("Page %(number)i - %(title)s", number=6, title=_("Surface Society continued")) }}</b>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-4">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/lore/page-8-1222x1577.png") }}"
+                                 alt="{{ _("Underground Society") }}" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title display-7">
+                                <b>{{ _("Page %(number)i - %(title)s", number=7, title=_("Underground Society")) }}</b>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-4">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/lore/page-9-1222x1582.png") }}"
+                                 alt="{{ _("Lunar Society") }}" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title display-7">
+                                <b>{{ _("Page %(number)i - %(title)s", number=8, title=_("Lunar Society")) }}</b>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-4">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/lore/page-12-1221x1579.png") }}"
+                                 alt="{{ _("Geography") }}" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title display-7">
+                                <b>{{ _("Page %(number)i - %(title)s", number=9, title=_("Geography")) }}</b>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}

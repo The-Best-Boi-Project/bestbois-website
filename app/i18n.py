@@ -13,5 +13,8 @@ def get_locale() -> Optional[str]:
     if 'language' in session:
         return session['language']
 
-    # Detect locale from request.
-    return request.accept_languages.best_match(LANGUAGES)
+    # Detect locale from request and save into session.
+    locale = request.accept_languages.best_match(LANGUAGES)
+    session['language'] = locale
+
+    return locale

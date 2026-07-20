@@ -1,197 +1,53 @@
-{% extends 'base.html.jinja' %}
-
-{% block title %}HD Bestboi{% endblock %}
-
+{% extends "base.html.jinja" %}
+{% block title %}{{ _("Bestboi HD") }}{% endblock %}
 {% block content %}
-
-<section
-    data-bs-version="5.1"
-    class="header11 cid-t8hdfeMrKF mbr-fullscreen mbr-parallax-background"
-    id="header11-22"
->
-    {# <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script> #}
-
-    <script
-        type="module"
-        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
-
-    <div
-        class="mbr-overlay"
-        style="opacity: 0.8; background-color: rgb(35, 35, 35)"
-    ></div>
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 image-wrapper">
-                <style>
+    <section data-bs-version="5.1"
+             class="header11 cid-t8hdfeMrKF mbr-fullscreen mbr-parallax-background"
+             id="header11-22">
+        {# <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script> #}
+        <script type="module"
+                src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <div class="mbr-overlay"
+             style="opacity: 0.8;
+                    background-color: rgb(35, 35, 35)"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 image-wrapper">
+                    <style>
                     model-viewer#reveal {
                         --poster-color: transparent;
                     }
-                </style>
-                <model-viewer
-                    id="reveal"
-                    loading="eager"
-                    bounds="tight"
-                    enable-pan=""
-                    src="{{ url_for('static', filename='models/BestboiHD.gltf') }}"
-                    camera-controls=""
-                    environment-image="neutral"
-                    poster="{{ url_for('static', filename='img/HDposter.png') }}"
-                    shadow-intensity="1"
-                >
+                    </style>
+                    <model-viewer id="reveal" loading="eager" bounds="tight" enable-pan="" src="{{ url_for("static", filename="models/hd.gltf") }}" camera-controls="" environment-image="neutral" poster="{{ url_for("static", filename="models/hd_poster.png") }}" shadow-intensity="1">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
-                        <script type="module" src="{{ url_for('static', filename='js/progress-bar.js') }}"></script>
+                        <script type="module"
+                                src="{{ url_for("static", filename="js/progress-bar.js") }}"></script>
                     </div>
-                </model-viewer>
-            </div>
-            <div class="col-12 col-md">
-                <div class="text-wrapper text-center">
-                    <h1
-                        class="mbr-section-title mb-3 display-2"
-                    >
-                        <strong>Bestboi HD</strong>
-                    </h1>
-                    <p class="mbr-text display-7">
+                    </model-viewer>
+                </div>
+                <div class="col-12 col-md">
+                    <div class="text-wrapper text-center">
+                        <h1 class="mbr-section-title mb-3 display-2">
+                            <strong>{{ _("Bestboi HD") }}</strong>
+                        </h1>
+                        {#<p class="mbr-text display-7">
                         <em
                             >The original bestboi but now refined and in HD<br /></em
-                        >You can move the preview on the right!<br />
-                    </p>
-                    <div class="mbr-section-btn mt-3">
-                        <a
-                            class="btn btn-secondary display-7"
-                            href="#features3-27"
-                            ><span
-                                class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >Download</a
-                        >
-                        <a
-                            class="btn btn-secondary display-7"
-                            href="#features3-27"
-                            ><span
-                                class="fas fa-fw fa-file mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >Download SPP</a
-                        >
-                        <a
-                            class="btn btn-secondary display-7"
-                            href="#info3-24"
-                            ><span
-                                class="fas fa-fw fa-tshirt mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >Clothing</a
-                        >
-                        <a
-                            class="btn btn-secondary display-7"
-                            href="#video5-28"
-                            ><span
-                                class="material material-ondemand-video mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >Setup Tutorial</a
-                        >
+                        >{{ _("You can move the preview on the right!") }}
+                    </p>#}
+                        <div class="mbr-section-btn mt-3">
+                            <a class="btn btn-secondary display-7"
+                               href="https://zexc.gumroad.com/l/BestboiHD"><span class="material material-file-download mbr-iconfont mbr-iconfont-btn"></span>{{ _("Download") }}</a>
+                            <a class="btn btn-secondary display-7" href="#"><span class="fas fa-fw fa-file mbr-iconfont mbr-iconfont-btn"></span>{{ _("Download SPP file") }}</a>
+                            <a class="btn btn-secondary display-7" href="#setup-video"><span class="material material-ondemand-video mbr-iconfont mbr-iconfont-btn"></span>{{ _("Setup Tutorial") }}</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section
-    data-bs-version="5.1"
-    class="features3 cid-t8hKivVp0u"
-    id="features3-27"
->
-    <div class="container">
-        <div class="mbr-section-head">
-            <h4
-                class="mbr-section-title align-center mb-0 display-2"
-            >
-                <strong>HD Downloads</strong>
-            </h4>
-            <h5
-                class="mbr-section-subtitle align-center mb-0 mt-2 display-5"
-            >
-                All Models are completely free, but please donate if you are
-                able to so we can deliver more content to you!
-            </h5>
-        </div>
-        <div class="row mt-4">
-            <div class="item features-image col-12 col-md-6 col-lg-6 active">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/hd-ref-2000x1125.png') }}"
-                            alt="HD"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-5">
-                            <strong>HD (VRChat Ready)</strong>
-                        </h5>
-
-                        <p class="mbr-text mt-3 display-7">
-                            A unity package already preconfigured with the boi
-                            for easy uploading and editing
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a
-                            href="https://zexc.gumroad.com/l/BestboiHD"
-                            class="btn item-btn btn-success display-7"
-                            ><span
-                                class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Download on %(platform)s", platform="Gumroad") }}</a
-                        >
-                    </div>
-                </div>
-            </div>
-
-            <div class="item features-image col-12 col-md-6 col-lg-6">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/substance-by-adobe-vector-logo-652x367.png') }}"
-                            alt="Substance Painter"
-                            data-slide-to="1"
-                            data-bs-slide-to="1"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-5">
-                            <strong>Substance Painter Files</strong>
-                        </h5>
-
-                        <p class="mbr-text mt-3 display-7">
-                            A handy Substance Painter file so you can easily
-                            modify the textures.<br />Get a student license for
-                            free at the official
-                            <a
-                                href="https://substance3d.adobe.com/education/"
-                                class="text-success"
-                                >substance painter website</a
-                            >
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a
-                            href="https://drive.google.com/file/d/1TrDyhuaMvsCiKnW2J9PsMrFOnzWUhT0R/view"
-                            class="btn item-btn btn-success display-7"
-                            ><span
-                                class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Download on %(platform)s", platform="Google Drive") }}</a
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section
+    </section>
+    {#<section
     data-bs-version="5.1"
     class="info3 cid-t8hdffwxZn mbr-parallax-background"
     id="info3-24"
@@ -218,7 +74,7 @@
                         <div class="mbr-section-btn mt-3">
                             <a
                                 class="btn btn-success display-4"
-                                href="{{ url_for('content.clothing') }}"
+                                href="{{ url_for("content.clothing") }}"
                                 ><span
                                     class="fas fa-fw fa-tshirt mbr-iconfont mbr-iconfont-btn"
                                 ></span
@@ -229,46 +85,20 @@
                 </div>
             </div>
         </div>
-    </div>#}
-</section>
-
-<section data-bs-version="5.1" class="video5 cid-t8hLT6ziP3" id="video5-28">
-    <div class="container">
-        <div class="title-wrapper mb-5">
-            <h4 class="mbr-section-title mb-0 display-2">
-                <strong>HD Bestboi Setup</strong>
-            </h4>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-6 video-block">
-                <div class="video-wrapper">
-                    <iframe
-                        class="mbr-embedded-video"
-                        src="https://www.youtube.com/embed/n-RufM-7ZHQ?rel=0&amp;amp;&amp;showinfo=0&amp;autoplay=0&amp;loop=0"
-                        width="1280"
-                        height="720"
-                        frameborder="0"
-                        allowfullscreen
-                    ></iframe>
-                </div>
-            </div>
-            <div class="col-12 col-lg">
-                <div class="text-wrapper">
-                    <h3
-                        class="mbr-section-subtitle mb-3 display-5"
-                    >
-                        <strong
-                            >Bestboi HD Video Tutorial - By Demirramon</strong
-                        >
-                    </h3>
-                    <p class="mbr-text display-5">
-                        A handy guide to give you a helping hand when setting up
-                        your chibi boi!
-                    </p>
-                </div>
-            </div>
-        </div>
     </div>
+</section>#}
+<section data-bs-version="5.1" class="video5 cid-t8hLT6ziP3" id="setup-video">
+<div class="container">
+<div class="title-wrapper mb-5">
+<h4 class="mbr-section-title mb-0 display-2">
+<strong>{{ _("Setup Tutorial") }}</strong>
+</h4>
+</div>
+<div class="video-block">
+<div class="video-wrapper">
+<iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/n-RufM-7ZHQ" width="1280" height="720" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
 </section>
-
 {% endblock %}

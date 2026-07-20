@@ -1,280 +1,202 @@
-{% extends 'base.html.jinja' %}
-
+{% extends "base.html.jinja" %}
 {% block title %}{{ _("Worlds") }}{% endblock %}
-
 {% block content %}
-
-<section
-    data-bs-version="5.1"
-    class="header1 cid-to3QQjUSzq mbr-fullscreen mbr-parallax-background"
-    id="header1-4v"
->
-    <div
-        class="mbr-overlay"
-        style="opacity: 0.5; background-color: rgb(0, 0, 0)"
-    ></div>
-
-    <div class="align-center container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-12">
-                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1">
-                    <strong>{{ _("Bestboi Worlds") }}</strong>
-                </h1>
-
-                <p class="mbr-text mbr-fonts-style display-5">
-                    {{ _("VRChat maps created for our community, crafted together to serve as places for bestbois to meet and have fun!") }}
-                </p>
-                <div class="mbr-section-btn mt-3">
-                    <a
-                        class="btn btn-success display-4"
-                        href="#gallery3-4z"
-                        ><span
-                            class="fas fa-fw fa-arrow-down mbr-iconfont mbr-iconfont-btn"
-                        ></span
-                        >{{ _("Maps") }}</a
-                    >
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="gallery3 cid-to3Rzh78z1" id="gallery3-4z">
-    <div class="container-fluid">
-        <div class="mbr-section-head">
-            <h4
-                class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"
-            >
-                <strong>{{ _("Active Maps") }}</strong><strong><br /></strong>
-            </h4>
-        </div>
-        <div class="row mt-4">
-            <div class="item features-image col-12 col-md-6 col-lg-6">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/world-test-image-2017415f1-3-sta.file-e3b8492e-4972-4982-8620-7daf292ee389.13-1-1200x900.png') }}"
-                            alt=""
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-2">
-                            <strong>{{ _("Bestboi Island Homes") }}</strong>
-                        </h5>
-
-                        <p class="mbr-text mbr-fonts-style mt-3 display-7">
-                            {{ _("Nestled deep within a mountain crevice, with avatars, video player, and more.") }}
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a
-                            href="https://vrchat.com/home/launch?worldId=wrld_05be1d4a-72ae-489b-93bd-489d2b78abc5"
-                            class="btn item-btn btn-secondary display-7"
-                            ><span
-                                class="material material-dvr mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Show on VRChat.com") }}</a
-                        >
-                    </div>
-                </div>
-            </div>
-            <div class="item features-image col-12 col-md-6 col-lg-6">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/world-bestboi-free-tavern-image-.file-0eda54c0-ca63-4eb8-9274-77c944ab0493.4-1200x900.png') }}"
-                            alt=""
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-2">
-                            <strong>{{ _("Bestboi Tavern") }}</strong>
-                        </h5>
-
-                        <p class="mbr-text mbr-fonts-style mt-3 display-7">
-                            {{ _("A small and cozy inn, the Bestboi Tavern offers a relaxing environment for hosting events and meetups. With a warm fireplace and a cozy spot to chill, it can act as a homeworld, meetingplace, and so much more!") }}
-                            <br />
-                            {{ _("Mainly Used for Meetups") }}
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a
-                            href=""
-                            class="btn item-btn btn-secondary display-7"
-                            target="_blank"
-                            ><span
-                                class="material material-dvr mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Show on VRChat.com") }}</a
-                        >
+    <section data-bs-version="5.1"
+             class="header1 cid-to3QQjUSzq mbr-fullscreen mbr-parallax-background"
+             id="header1-4v">
+        <div class="mbr-overlay"
+             style="opacity: 0.5;
+                    background-color: rgb(0, 0, 0)"></div>
+        <div class="align-center container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-12">
+                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1">
+                        <strong>{{ _("Bestboi Worlds") }}</strong>
+                    </h1>
+                    <p class="mbr-text mbr-fonts-style display-5">
+                        {{ _("VRChat maps created for our community, crafted together to serve as places for bestbois to meet and have fun!") }}
+                    </p>
+                    <div class="mbr-section-btn mt-3">
+                        <a class="btn btn-success display-4" href="#gallery3-4z"><span class="fas fa-fw fa-arrow-down mbr-iconfont mbr-iconfont-btn"></span>{{ _("Maps") }}</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="gallery3 cid-to3RAdmluH" id="gallery3-50">
-    <div class="container-fluid">
-        <div class="mbr-section-head">
-            <h4
-                class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"
-            >
-                <strong>{{ _("Archive") }}</strong><strong><br /></strong>
-            </h4>
-        </div>
-        <div class="row mt-4">
-            <div class="item features-image col-12 col-md-6 col-lg-3 active">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/hd-pic-1158x868.png') }}"
-                            alt="Hell"
-                            data-slide-to="0"
-                            data-bs-slide-to="0"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-2">
-                            <strong>{{ _('Bestboi Valley') }}</strong>
-                        </h5>
-
-                        <p class="mbr-text mbr-fonts-style mt-3 display-7">
-                            Nestled Deep within a mountain crevice, the Bestboi
-                            Valley, has been inhabited for hundreds of years,
-                            with much to do and discover within, the Bestboi
-                            Valley is the main bestboi map, with all 3 versions
-                            of the bestboi avatar being available here, with
-                            many different variations across the map. In the
-                            Bestboi Valley you can visit the Museum of Arts, and
-                            marvel at the creative talent of the community, or
-                            visit the Rocky inn and chill with your friends. You
-                            could even go to Speaker's Hall, and listen to a
-                            speech, or host an event. There's always something
-                            new to do in the Valley
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a
-                            href=""
-                            class="btn item-btn btn-secondary display-7"
-                            target="_blank"
-                            ><span
-                                class="fas fa-fw fa-exclamation-triangle mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Being Restored") }}</a
-                        >
+    </section>
+    <section data-bs-version="5.1"
+             class="gallery3 cid-to3Rzh78z1"
+             id="gallery3-4z">
+        <div class="container-fluid">
+            <div class="mbr-section-head">
+                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                    <strong>{{ _("Active Maps") }}</strong><strong>
+                        <br />
+                    </strong>
+                </h4>
+            </div>
+            <div class="row mt-4">
+                <div class="item features-image col-12 col-md-6 col-lg-6">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/world-test-image-2017415f1-3-sta.file-e3b8492e-4972-4982-8620-7daf292ee389.13-1-1200x900.png") }}"
+                                 alt="" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title mbr-fonts-style display-2">
+                                <strong>{{ _("Bestboi Island Homes") }}</strong>
+                            </h5>
+                            <p class="mbr-text mbr-fonts-style mt-3 display-7">
+                                {{ _("Nestled deep within a mountain crevice, with avatars, video player, and more.") }}
+                            </p>
+                        </div>
+                        <div class="mbr-section-btn item-footer mt-2">
+                            <a href="https://vrchat.com/home/launch?worldId=wrld_05be1d4a-72ae-489b-93bd-489d2b78abc5"
+                               class="btn item-btn btn-secondary display-7"><span class="material material-dvr mbr-iconfont mbr-iconfont-btn"></span>{{ _("Show on VRChat.com") }}</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="item features-image col-12 col-md-6 col-lg-3">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/image-coming-soon-2-474x474.jpg') }}"
-                            alt="You got a friend in me"
-                            data-slide-to="1"
-                            data-bs-slide-to="1"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-2">
-                            <strong>Bestboi Docks</strong>
-                        </h5>
-
-                        <p class="mbr-text mbr-fonts-style mt-3 display-7">
-                            <em
-                                >Got no description yet but it is sloooowly
-                                being ported to sdk<br /><br />my bad if i'm
-                                taking a long time-</em
-                            ><br /><br />-
-                            <a
-                                href="{{ url_for('core.team', _anchor='team2-4m') }}"
-                                class="text-secondary"
-                                >Julian</a
-                            >
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a
-                            href=""
-                            class="btn item-btn btn-secondary display-7"
-                            target="_blank"
-                            ><span
-                                class="fas fa-fw fa-exclamation-triangle mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Unavailable") }}</a
-                        >
-                    </div>
-                </div>
-            </div>
-            <div class="item features-image col-12 col-md-6 col-lg-3">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/image-coming-soon-2-474x474.jpg') }}"
-                            alt="Some Celebration Idk"
-                            data-slide-to="2"
-                            data-bs-slide-to="2"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-2">
-                            <strong>Temp</strong>
-                        </h5>
-
-                        <p class="mbr-text mbr-fonts-style mt-3 display-7">
-                            This is temporary until the original name is
-                            found<br />
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a
-                            href=""
-                            class="btn item-btn btn-secondary display-7"
-                            target="_blank"
-                            ><span
-                                class="fas fa-fw fa-exclamation-triangle mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Unavailable") }}</a
-                        >
-                    </div>
-                </div>
-            </div>
-            <div class="item features-image col-12 col-md-6 col-lg-3">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/image-coming-soon-2-474x474.jpg') }}"
-                            alt="Hell"
-                            data-slide-to="3"
-                            data-bs-slide-to="4"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-2">
-                            <strong>Bestbois Kingdom</strong>
-                        </h5>
-
-                        <p class="mbr-text mbr-fonts-style mt-3 display-7">
-                            Where it all began
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a
-                            href=""
-                            class="btn item-btn btn-secondary display-7"
-                            target="_blank"
-                            ><span
-                                class="fas fa-fw fa-exclamation-triangle mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Unavailable") }}</a
-                        >
+                <div class="item features-image col-12 col-md-6 col-lg-6">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/world-bestboi-free-tavern-image-.file-0eda54c0-ca63-4eb8-9274-77c944ab0493.4-1200x900.png") }}"
+                                 alt="" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title mbr-fonts-style display-2">
+                                <strong>{{ _("Bestboi Tavern") }}</strong>
+                            </h5>
+                            <p class="mbr-text mbr-fonts-style mt-3 display-7">
+                                {{ _("A small and cozy inn, the Bestboi Tavern offers a relaxing environment for hosting events and meetups. With a warm fireplace and a cozy spot to chill, it can act as a homeworld, meetingplace, and so much more!") }}
+                                <br />
+                                {{ _("Mainly Used for Meetups") }}
+                            </p>
+                        </div>
+                        <div class="mbr-section-btn item-footer mt-2">
+                            <a href="" class="btn item-btn btn-secondary display-7" target="_blank"><span class="material material-dvr mbr-iconfont mbr-iconfont-btn"></span>{{ _("Show on VRChat.com") }}</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
+    <section data-bs-version="5.1"
+             class="gallery3 cid-to3RAdmluH"
+             id="gallery3-50">
+        <div class="container-fluid">
+            <div class="mbr-section-head">
+                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                    <strong>{{ _("Archive") }}</strong><strong>
+                        <br />
+                    </strong>
+                </h4>
+            </div>
+            <div class="row mt-4">
+                <div class="item features-image col-12 col-md-6 col-lg-3 active">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/hd-pic-1158x868.png") }}"
+                                 alt="Hell"
+                                 data-slide-to="0"
+                                 data-bs-slide-to="0" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title mbr-fonts-style display-2">
+                                <strong>{{ _("Bestboi Valley") }}</strong>
+                            </h5>
+                            <p class="mbr-text mbr-fonts-style mt-3 display-7">
+                                Nestled Deep within a mountain crevice, the Bestboi
+                                Valley, has been inhabited for hundreds of years,
+                                with much to do and discover within, the Bestboi
+                                Valley is the main bestboi map, with all 3 versions
+                                of the bestboi avatar being available here, with
+                                many different variations across the map. In the
+                                Bestboi Valley you can visit the Museum of Arts, and
+                                marvel at the creative talent of the community, or
+                                visit the Rocky inn and chill with your friends. You
+                                could even go to Speaker's Hall, and listen to a
+                                speech, or host an event. There's always something
+                                new to do in the Valley
+                            </p>
+                        </div>
+                        <div class="mbr-section-btn item-footer mt-2">
+                            <a href="" class="btn item-btn btn-secondary display-7" target="_blank"><span class="fas fa-fw fa-exclamation-triangle mbr-iconfont mbr-iconfont-btn"></span>{{ _("Being Restored") }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-3">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/coming-soon.jpeg") }}"
+                                 alt="You got a friend in me"
+                                 data-slide-to="1"
+                                 data-bs-slide-to="1" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title mbr-fonts-style display-2">
+                                <strong>Bestboi Docks</strong>
+                            </h5>
+                            <p class="mbr-text mbr-fonts-style mt-3 display-7">
+                                <em>Got no description yet but it is sloooowly
+                                    being ported to sdk
+                                    <br />
+                                    <br />
+                                    my bad if i'm
+                                taking a long time-</em>
+                                <br />
+                                <br />
+                                -
+                                <a href="{{ url_for("core.team", _anchor="team2-4m") }}"
+                                   class="text-secondary">Julian</a>
+                            </p>
+                        </div>
+                        <div class="mbr-section-btn item-footer mt-2">
+                            <a href="" class="btn item-btn btn-secondary display-7" target="_blank"><span class="fas fa-fw fa-exclamation-triangle mbr-iconfont mbr-iconfont-btn"></span>{{ _("Unavailable") }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-3">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/coming-soon.jpeg") }}"
+                                 alt="Some Celebration Idk"
+                                 data-slide-to="2"
+                                 data-bs-slide-to="2" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title mbr-fonts-style display-2">
+                                <strong>Temp</strong>
+                            </h5>
+                            <p class="mbr-text mbr-fonts-style mt-3 display-7">
+                                This is temporary until the original name is
+                                found
+                                <br />
+                            </p>
+                        </div>
+                        <div class="mbr-section-btn item-footer mt-2">
+                            <a href="" class="btn item-btn btn-secondary display-7" target="_blank"><span class="fas fa-fw fa-exclamation-triangle mbr-iconfont mbr-iconfont-btn"></span>{{ _("Unavailable") }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-3">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/coming-soon.jpeg") }}"
+                                 alt="Hell"
+                                 data-slide-to="3"
+                                 data-bs-slide-to="4" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title mbr-fonts-style display-2">
+                                <strong>Bestbois Kingdom</strong>
+                            </h5>
+                            <p class="mbr-text mbr-fonts-style mt-3 display-7">Where it all began</p>
+                        </div>
+                        <div class="mbr-section-btn item-footer mt-2">
+                            <a href="" class="btn item-btn btn-secondary display-7" target="_blank"><span class="fas fa-fw fa-exclamation-triangle mbr-iconfont mbr-iconfont-btn"></span>{{ _("Unavailable") }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}

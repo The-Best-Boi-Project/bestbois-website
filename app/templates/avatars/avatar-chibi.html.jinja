@@ -1,185 +1,62 @@
-{% extends 'base.html.jinja' %}
-
-{% block title %}Bestboi Chibi{% endblock %}
-
+{% extends "base.html.jinja" %}
+{% block title %}{{ _("Bestboi Chibi") }}{% endblock %}
 {% block content %}
-
-<section
-    data-bs-version="5.1"
-    class="header11 cid-t87E9v4dgh mbr-fullscreen mbr-parallax-background"
-    id="header11-1z"
->
-    <script
-        type="module"
-        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
-
-    <div
-        class="mbr-overlay"
-        style="opacity: 0.8; background-color: rgb(35, 35, 35)"
-    ></div>
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 image-wrapper">
-                <style>
+    <section data-bs-version="5.1"
+             class="header11 cid-t87E9v4dgh mbr-fullscreen mbr-parallax-background"
+             id="header11-1z">
+        <script type="module"
+                src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <div class="mbr-overlay"
+             style="opacity: 0.8;
+                    background-color: rgb(35, 35, 35)"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 image-wrapper">
+                    <style>
                     model-viewer#reveal {
                         --poster-color: transparent;
                     }
-                </style>
-                <model-viewer
-                    id="reveal"
-                    loading="eager"
-                    bounds="tight"
-                    enable-pan=""
-                    src="{{ url_for('static', filename='models/BestBoiChibi.glb') }}"
-                    camera-controls=""
-                    environment-image="neutral"
-                    poster="{{ url_for('static', filename='img/Chibiposter.png') }}"
-                    shadow-intensity="1"
-                >
+                    </style>
+                    <model-viewer id="reveal" loading="eager" bounds="tight" enable-pan="" src="{{ url_for("static", filename="models/chibi.glb") }}" camera-controls="" environment-image="neutral" poster="{{ url_for("static", filename="models/chibi_poster.png") }}" shadow-intensity="1">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
-                        <script type="module" src="{{ url_for('static', filename='js/progress-bar.js') }}"></script>
+                        <script type="module"
+                                src="{{ url_for("static", filename="js/progress-bar.js") }}"></script>
                     </div>
-                </model-viewer>
-            </div>
-            <div class="col-12 col-md">
-                <div class="text-wrapper text-center">
-                    <h1
-                        class="mbr-section-title mb-3 display-2"
-                    >
-                        <strong>{{ _("Bestboi Chibi") }}</strong>
-                    </h1>
-                    <p class="mbr-text display-7">
+                    </model-viewer>
+                </div>
+                <div class="col-12 col-md">
+                    <div class="text-wrapper text-center">
+                        <h1 class="mbr-section-title mb-3 display-2">
+                            <strong>{{ _("Bestboi Chibi") }}</strong>
+                        </h1>
+                        {#<p class="mbr-text display-7">
                         {{ _("New bestboi in a cute polished chibi style!") }}
                         <br />
                         <em>
                             {{ _("You can move the preview on the right.") }}
                         </em>
-                    </p>
-                    <div class="mbr-section-btn mt-3">
-                        <a
+                    </p>#}
+                        <div class="mbr-section-btn mt-3">
+                            <a class="btn item-btn btn-success display-7"
+                               href="https://zexc.gumroad.com/l/BestboiChibi"><span class="material material-file-download mbr-iconfont mbr-iconfont-btn"></span>{{ _("Download") }}</a>
+                            <a class="btn btn-secondary display-7"
+                               href="https://cdn.discordapp.com/attachments/506965944162189313/1461112914248470629/Bestboi_Chibi_Official.spp?ex=6a5ded30&is=6a5c9bb0&hm=190b50d0b14743a95da948dbc8d7b769ed1c95b4f2c7ed8c9a7bea1cb2129133"><span class="fas fa-fw fa-file mbr-iconfont mbr-iconfont-btn"></span>{{ _("Download SPP file") }}</a>
+                            {#<a
                             class="btn btn-secondary display-7"
-                            href="#features3-26"
-                            ><span
-                                class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Download") }}</a
-                        >
-                        <a
-                            class="btn btn-secondary display-7"
-                            href="#features3-26"
-                            ><span
-                                class="fas fa-fw fa-file mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Download SPP") }}</a
-                        >
-                        <a
-                            class="btn btn-secondary display-7"
-                            href="#info3-1w"
+                            href=""
                             ><span
                                 class="fas fa-fw fa-tshirt mbr-iconfont mbr-iconfont-btn"
                             ></span
                             >{{ _("Clothing") }}</a
-                        >
+                        >#}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section
-    data-bs-version="5.1"
-    class="features3 cid-t8hC2X4mNr"
-    id="features3-26"
->
-    <div class="container">
-        <div class="mbr-section-head">
-            <h4
-                class="mbr-section-title align-center mb-0 display-2"
-            >
-                <strong>{{ _("Chibi Downloads") }}</strong>
-            </h4>
-            <h5
-                class="mbr-section-subtitle align-center mb-0 mt-2 display-5"
-            >
-                {{ _("All models are completely free, but please donate if you are able to so we can deliver more content to you!") }}
-            </h5>
-        </div>
-        <div class="row mt-4">
-            <div class="item features-image col-12 col-md-6 col-lg-6">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/bestboi-display-comms-4k-22-05-2021-21-50-38-2000x1125.png') }}"
-                            alt="Chibi"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-5">
-                            <strong>{{ _("Chibi (VRChat Ready)") }}</strong>
-                        </h5>
-
-                        <p class="mbr-text mt-3 display-7">
-                            {{ _("A unity package already preconfigured with the boi for easy uploading and editing") }}<br />
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a
-                            href="https://zexc.gumroad.com/l/BestboiChibi"
-                            class="btn item-btn btn-success display-7"
-                            ><span
-                                class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Download on %(platform)s", platform="Gumroad") }}</a
-                        >
-                    </div>
-                </div>
-            </div>
-
-            <div class="item features-image col-12 col-md-6 col-lg-6">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/substance-by-adobe-vector-logo-652x367.png') }}"
-                            alt="Substance Painter"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-5">
-                            <strong>Substance Painter Files</strong>
-                        </h5>
-
-                        <p class="mbr-text mt-3 display-7">
-                            A handy Substance Painter file so you can easily
-                            modify the textures.<br />Get a student license for
-                            free at the official
-                            <a
-                                href="https://store.substance3d.com/user/login?destination=students-teachers"
-                                class="text-success"
-                                >substance painter website</a
-                            ><br />
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a
-                            href="https://drive.google.com/file/d/1ASrGbmoDRS9ytjUfwJ1ITh1uarOCgLWB/view"
-                            class="btn item-btn btn-success display-7"
-                            ><span
-                                class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Download on %(platform)s", platform="Google Drive") }}</a
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section
+    </section>
+    {#<section
     data-bs-version="5.1"
     class="info3 cid-t87y8HpXAb mbr-parallax-background"
     id="info3-1w"
@@ -189,7 +66,7 @@
         style="opacity: 0.8; background-color: rgb(35, 35, 35)"
     ></div>
 
-    {#<div class="container-fluid">
+    <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="card col-12 col-lg-10">
                 <div class="card-wrapper">
@@ -206,7 +83,7 @@
                         <div class="mbr-section-btn mt-3">
                             <a
                                 class="btn btn-success display-4"
-                                href="{{ url_for('content.clothing') }}"
+                                href="{{ url_for("content.clothing") }}"
                                 ><span
                                     class="fas fa-fw fa-tshirt mbr-iconfont mbr-iconfont-btn"
                                 ></span
@@ -217,7 +94,6 @@
                 </div>
             </div>
         </div>
-    </div>#}
-</section>
-
+    </div>
+</section>#}
 {% endblock %}

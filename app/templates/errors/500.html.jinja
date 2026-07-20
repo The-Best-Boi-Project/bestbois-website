@@ -1,45 +1,26 @@
-{% extends 'base.html.jinja' %}
-
+{% extends "base.html.jinja" %}
 {% block title %}{{ _("Oh boi...") }}{% endblock %}
-
 {% block content %}
-
-<section
-    data-bs-version="5.1"
-    class="header1 cid-t9euZarN4k mbr-fullscreen mbr-parallax-background"
-    id="header1-36"
->
-    <div
-        class="mbr-overlay"
-        style="opacity: 0.8; background-color: rgb(35, 35, 35)"
-    ></div>
-
-    <div class="align-center container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-12">
-                <h1 class="mbr-section-title mb-3 display-1">
-                    <strong>{{ _("Oopsies") }}</strong>
-                </h1>
-
-                <p class="mbr-text display-7">
-                    {{ _("Well, that wasn't supposed to happen... If you see this page, something went VERY wrong!") }}
-                    {% if error is defined %}
-                        <br />
-                        {{ _("Developer clue: %(error)s", error=error) }}
-                    {% endif %}
-                </p>
-
-                <div class="mbr-section-btn mt-3">
-                    <a class="btn btn-success display-4" href="{{ url_for('core.index') }}"
-                        ><span
-                            class="material material-home mbr-iconfont mbr-iconfont-btn"
-                        ></span
-                        >{{ _("Return Home") }}</a
-                    >
+    <section data-bs-version="5.1"
+             class="header1 cid-t9euZarN4k mbr-fullscreen mbr-parallax-background"
+             id="header1-36">
+        <div class="mbr-overlay"
+             style="opacity: 0.8;
+                    background-color: rgb(35, 35, 35)"></div>
+        <div class="align-center container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-12">
+                    <h1 class="mbr-section-title mb-3 display-1">
+                        <strong>{{ _("Oopsies") }}</strong>
+                    </h1>
+                    <p class="mbr-text display-7">
+                        {{ _("Well, that wasn't supposed to happen... If you see this page, something went VERY wrong!") }}
+                    </p>
+                    <div class="mbr-section-btn mt-3">
+                        <a class="btn btn-success display-4" href="{{ url_for("core.index") }}"><span class="material material-home mbr-iconfont mbr-iconfont-btn"></span>{{ _("Return Home") }}</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 {% endblock %}

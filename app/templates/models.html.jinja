@@ -1,419 +1,274 @@
-{% extends 'base.html.jinja' %}
-
+{% extends "base.html.jinja" %}
 {% block title %}{{ _("Model Hub") }}{% endblock %}
-
 {% block content %}
-
-<section
-    data-bs-version="5.1"
-    class="header1 cid-t7ZxPQXEwF mbr-fullscreen mbr-parallax-background"
-    id="header1-11"
->
-    <div
-        class="mbr-overlay"
-        style="opacity: 0.8; background-color: rgb(35, 35, 35)"
-    ></div>
-
-    <div class="align-center container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-12">
-                <h1 class="mbr-section-title mb-3 display-1">
-                    <strong>{{ _("Model Hub") }}</strong>
-                </h1>
-
-                <p class="mbr-text display-5">
-                    Welcome to the Download hub!<br />Here you can find all the
-                    Bestboi official and community model downloads. Select a
-                    model version or category and go to its download page.
-                </p>
-                <div class="mbr-section-btn mt-3">
-                    <a class="btn btn-success display-4" href="#slider5-1a"
-                        ><span
-                            class="fas fa-fw fa-map-marker-alt mbr-iconfont mbr-iconfont-btn"
-                        ></span
-                        >{{ _("Official Models") }}</a
-                    >
-                    {#<a
+    <section data-bs-version="5.1"
+             class="header1 cid-t7ZxPQXEwF mbr-fullscreen mbr-parallax-background"
+             id="header1-11">
+        <div class="mbr-overlay"
+             style="opacity: 0.8;
+                    background-color: rgb(35, 35, 35)"></div>
+        <div class="align-center container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-12">
+                    <h1 class="mbr-section-title mb-3 display-1">
+                        <strong>{{ _("Model Hub") }}</strong>
+                    </h1>
+                    <p class="mbr-text display-5">
+                        {{ _("Welcome to the Download Hub!<br />Here you can find all the official and community bestboi models. Select a model version or category and go to its page.") }}
+                    </p>
+                    <div class="mbr-section-btn mt-3">
+                        <a class="btn btn-success display-4" href="#official-models">
+                            <span class="fas fa-fw fa-map-marker-alt mbr-iconfont mbr-iconfont-btn"></span>
+                            {{ _("Official Models") }}
+                        </a>
+                        {#<a
                         class="btn btn-success display-4"
-                        href="{{ url_for('content.clothing') }}"
+                        href="{{ url_for("content.clothing") }}"
                         ><span
                             class="fas fa-fw fa-tshirt mbr-iconfont mbr-iconfont-btn"
                         ></span
                         >Bestboi Clothing</a
                     >#}
-                    <a class="btn btn-success display-4" href="#features3-2y"
-                        ><span
-                            class="fas fa-fw fa-dragon mbr-iconfont mbr-iconfont-btn"
-                        ></span
-                        >{{ _("Community Models") }}</a
-                    >
+                        <a class="btn btn-success display-4" href="#community-models">
+                            <span class="fas fa-fw fa-dragon mbr-iconfont mbr-iconfont-btn"></span>
+                            {{ _("Community Models") }}
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section
-    data-bs-version="5.1"
-    class="slider5 mbr-embla cid-t7ZHi3gJzA"
-    id="slider5-1a"
->
-    <div class="mbr-overlay"></div>
-    <div class="position-relative">
-        <div class="mbr-section-head">
-            <h4
-                class="mbr-section-title align-center mb-0 display-2"
-            >
-                <strong>{{ _("Official Bestboi Downloads") }}</strong>
-            </h4>
-            <h5
-                class="mbr-section-subtitle align-center mb-0 mt-2 display-7"
-            >
-                All Models are completely free, but please donate if you are
-                able to so we can deliver more content to you!
-                <br />
-                All models require the latest
-                <a
-                    href="https://vrchat.com/download/sdk3-avatars"
-                    class="text-secondary"
-                    >VRChat SDK3.0</a
-                ><br />
-                <div>You can drag left and right to browse between models</div>
-            </h5>
-        </div>
-        <div
-            class="embla mt-4"
-            data-skip-snaps="true"
-            data-align="center"
-            data-contain-scroll="trimSnaps"
-            data-auto-play="true"
-            data-auto-play-interval="3"
-            data-draggable="true"
-        >
-            <div class="embla__viewport container-fluid">
-                <div class="embla__container">
-                    <div
-                        class="embla__slide slider-image item active"
-                        style="margin-left: 1rem; margin-right: 1rem"
-                    >
-                        <div class="slide-content">
-                            <div class="item-img">
-                                <div class="item-wrapper">
-                                    <a
-                                        href="{{ url_for('content.avatar', avatar_type='chibi') }}"
-                                        target="false"
-                                    ></a
-                                    ><a
-                                        href="{{ url_for('content.avatar', avatar_type='kemono') }}"
-                                        ><img
-                                            src="{{ url_for('static', filename='img/bestboikemono-tem222p-474x474.png') }}"
-                                            alt="{{ _("Bestboi Kemono") }}"
-                                            title=""
-                                            data-slide-to="0"
-                                            data-bs-slide-to="0"
-                                    /></a>
+    </section>
+    <section data-bs-version="5.1"
+             class="slider5 mbr-embla cid-t7ZHi3gJzA"
+             id="official-models">
+        <div class="mbr-overlay"></div>
+        <div class="position-relative">
+            <div class="mbr-section-head">
+                <h4 class="mbr-section-title align-center mb-0 display-2">
+                    <strong>{{ _("Official Bestboi Downloads") }}</strong>
+                </h4>
+                <h5 class="mbr-section-subtitle align-center mb-0 mt-2 display-7">
+                    <p>
+                        All models require the latest
+                        <a href="https://vrchat.com/download/sdk3-avatars"
+                           class="text-secondary">VRChat SDK3.0</a>
+                    </p>
+                    <p>{{ _("You can drag left and right to browse between models") }}</p>
+                </h5>
+            </div>
+            <div class="embla mt-4"
+                 data-skip-snaps="true"
+                 data-align="center"
+                 data-contain-scroll="trimSnaps"
+                 data-auto-play="true"
+                 data-auto-play-interval="3"
+                 data-draggable="true">
+                <div class="embla__viewport container-fluid">
+                    <div class="embla__container">
+                        <div class="embla__slide slider-image item active"
+                             style="margin-left: 1rem;
+                                    margin-right: 1rem">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper">
+                                        <a href="{{ url_for("content.avatar", avatar_type="kemono") }}">
+                                            <img src="{{ url_for("static", filename="img/BestboiKemono-meta.png") }}"
+                                                 alt="{{ _("Bestboi Kemono") }}" />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item-content">
-                                <h5
-                                    class="item-title display-5"
-                                >
-                                    <strong>{{ _("Bestboi Kemono") }}</strong>
-                                </h5>
-                                <h6
-                                    class="item-subtitle mt-1 display-7"
-                                >
-                                    <em>{{ _("Release date: %(date)s", date="13 DEC 2025") }}</em>
-                                </h6>
-                                <p
-                                    class="mbr-text mt-3 display-7"
-                                >
-                                    {{ _("The newest of the bunch, a cute <b>kemono</b>-styled bestboi!") }}
-                                </p>
-                            </div>
-                            <div class="mbr-section-btn item-footer mt-2">
-                                <a
-                                    href="{{ url_for('content.avatar', avatar_type='kemono') }}"
-                                    class="btn item-btn btn-success display-7"
-                                    ><span
-                                        class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                                    ></span
-                                    >{{ _("Download") }}</a
-                                >
+                                <div class="item-content">
+                                    <h5 class="item-title display-5">
+                                        <strong>{{ _("Bestboi Kemono") }}</strong>
+                                    </h5>
+                                    <p class="item-subtitle mt-1 display-7">
+                                        <em>{{ _("Release date: %(date)s", date="13 DEC 2025") }}</em>
+                                    </p>
+                                    <p class="mbr-text mt-3 display-7">
+                                        {{ _("The newest of the bunch, a cute <b>kemono</b>-styled bestboi!") }}
+                                    </p>
+                                </div>
+                                <div class="mbr-section-btn item-footer mt-2">
+                                    <a href="{{ url_for("content.avatar", avatar_type="kemono") }}"
+                                       class="btn item-btn btn-success display-7">
+                                        <span class="material material-file-download mbr-iconfont mbr-iconfont-btn"></span>
+                                        {{ _("Download") }}
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div
-                        class="embla__slide slider-image item"
-                        style="margin-left: 1rem; margin-right: 1rem"
-                    >
-                        <div class="slide-content">
-                            <div class="item-img">
-                                <div class="item-wrapper">
-                                    <a href="" target="false"></a
-                                    ><a
-                                        href="{{ url_for('content.avatar', avatar_type='chibi') }}"
-                                        target="false"
-                                    ></a
-                                    ><a
-                                        href="{{ url_for('content.avatar', avatar_type='chibi', _anchor='header11-1z') }}"
-                                        target="false"
-                                    ></a
-                                    ><a
-                                        href="{{ url_for('content.avatar', avatar_type='chibi') }}"
-                                        ><img
-                                            src="{{ url_for('static', filename='img/demoscene-summer-custom...-02-06-2021-16-18-2-1566x1566.png') }}"
-                                            alt="{{ _("Bestboi Chibi") }}"
-                                            title=""
-                                            data-slide-to="1"
-                                            data-bs-slide-to="1"
-                                    /></a>
+                        <div class="embla__slide slider-image item"
+                             style="margin-left: 1rem;
+                                    margin-right: 1rem">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper">
+                                        <a href="{{ url_for("content.avatar", avatar_type="chibi") }}">
+                                            <img src="{{ url_for("static", filename="img/demoscene-summer-custom...-02-06-2021-16-18-2-1566x1566.png") }}"
+                                                 alt="{{ _("Bestboi Chibi") }}" />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item-content">
-                                <h5
-                                    class="item-title display-5"
-                                >
-                                    <strong>{{ _("Bestboi Chibi") }}</strong>
-                                </h5>
-                                <h6
-                                    class="item-subtitle mt-1 display-7"
-                                >
-                                    <em>{{ _("Release date: %(date)s", date="2 JUN 2021") }}</em>
-                                </h6>
-                                <p
-                                    class="mbr-text mt-3 display-7"
-                                >
-                                    {{ _("The bestboi we all love, now in a cute <b>chibi</b> and polished style!") }}<br />
-                                </p>
-                            </div>
-                            <div class="mbr-section-btn item-footer mt-2">
-                                <a
-                                    href="{{ url_for('content.avatar', avatar_type='chibi') }}"
-                                    class="btn item-btn btn-success display-7"
-                                    ><span
-                                        class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                                    ></span
-                                    >{{ _("Download") }}</a
-                                >
+                                <div class="item-content">
+                                    <h5 class="item-title display-5">
+                                        <strong>{{ _("Bestboi Chibi") }}</strong>
+                                    </h5>
+                                    <p class="item-subtitle mt-1 display-7">
+                                        <em>{{ _("Release date: %(date)s", date="2 JUN 2021") }}</em>
+                                    </p>
+                                    <p class="mbr-text mt-3 display-7">
+                                        {{ _("The bestboi we all love, now in a cute <b>chibi</b> and polished style!") }}
+                                    </p>
+                                </div>
+                                <div class="mbr-section-btn item-footer mt-2">
+                                    <a href="{{ url_for("content.avatar", avatar_type="chibi") }}"
+                                       class="btn item-btn btn-success display-7">
+                                        <span class="material material-file-download mbr-iconfont mbr-iconfont-btn"></span>
+                                        {{ _("Download") }}
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div
-                        class="embla__slide slider-image item"
-                        style="margin-left: 1rem; margin-right: 1rem"
-                    >
-                        <div class="slide-content">
-                            <div class="item-img">
-                                <div class="item-wrapper">
-                                    <a href="" target="false"></a
-                                    ><a href="{{ url_for('content.avatar', avatar_type='hd') }}"
-                                        ><img
-                                            src="{{ url_for('static', filename='img/bestboi-hd-thumbnail-1200x1200.png') }}"
-                                            alt="{{ _("Bestboi HD") }}"
-                                            title=""
-                                            data-slide-to="2"
-                                            data-bs-slide-to="2"
-                                    /></a>
+                        <div class="embla__slide slider-image item"
+                             style="margin-left: 1rem;
+                                    margin-right: 1rem">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper">
+                                        <a href="{{ url_for("content.avatar", avatar_type="hd") }}">
+                                            <img src="{{ url_for("static", filename="img/bestboi-hd-thumbnail-1200x1200.png") }}"
+                                                 alt="{{ _("Bestboi HD") }}" />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item-content">
-                                <h5
-                                    class="item-title display-5"
-                                >
-                                    <strong>{{ _("Bestboi HD") }}</strong>
-                                </h5>
-                                <h6
-                                    class="item-subtitle mt-1 display-7"
-                                >
-                                    <em>{{ _("Release date: %(date)s", date="19 AUG 2020") }}</em>
-                                </h6>
-                                <p
-                                    class="mbr-text mt-3 display-7"
-                                >
-                                    {{ _("The third model to join the club! Bestbois in ✨<b>HD</b>✨") }}
-                                </p>
-                            </div>
-                            <div class="mbr-section-btn item-footer mt-2">
-                                <a
-                                    href="{{ url_for('content.avatar', avatar_type='hd') }}"
-                                    class="btn item-btn btn-success display-7"
-                                    ><span
-                                        class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                                    ></span
-                                    >{{ _("Download") }}</a
-                                >
+                                <div class="item-content">
+                                    <h5 class="item-title display-5">
+                                        <strong>{{ _("Bestboi HD") }}</strong>
+                                    </h5>
+                                    <p class="item-subtitle mt-1 display-7">
+                                        <em>{{ _("Release date: %(date)s", date="19 AUG 2020") }}</em>
+                                    </p>
+                                    <p class="mbr-text mt-3 display-7">
+                                        {{ _("The third model to join the club! Bestbois in ✨<b>HD</b>✨") }}
+                                    </p>
+                                </div>
+                                <div class="mbr-section-btn item-footer mt-2">
+                                    <a href="{{ url_for("content.avatar", avatar_type="hd") }}"
+                                       class="btn item-btn btn-success display-7">
+                                        <span class="material material-file-download mbr-iconfont mbr-iconfont-btn"></span>
+                                        {{ _("Download") }}
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div
-                        class="embla__slide slider-image item"
-                        style="margin-left: 1rem; margin-right: 1rem"
-                    >
-                        <div class="slide-content">
-                            <div class="item-img">
-                                <div class="item-wrapper">
-                                    <a href="" target="false"></a
-                                    ><a
-                                        href="{{ url_for('content.avatar', avatar_type='toon') }}"
-                                        target="false"
-                                    ></a
-                                    ><a
-                                        href="{{ url_for('content.avatar', avatar_type='toon') }}"
-                                        ><img
-                                            src="{{ url_for('static', filename='img/bestboi-toon-thumbnail-copy-1080x1080.png') }}"
-                                            alt="{{ _("Bestboi Toon") }}"
-                                            title=""
-                                            data-slide-to="3"
-                                            data-bs-slide-to="3"
-                                    /></a>
+                        <div class="embla__slide slider-image item"
+                             style="margin-left: 1rem;
+                                    margin-right: 1rem">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper">
+                                        <a href="{{ url_for("content.avatar", avatar_type="toon") }}">
+                                            <img src="{{ url_for("static", filename="img/bestboi-toon-thumbnail-copy-1080x1080.png") }}"
+                                                 alt="{{ _("Bestboi Toon") }}" />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item-content">
-                                <h5
-                                    class="item-title display-5"
-                                >
-                                    <strong>{{ _("Bestboi Toon") }}</strong>
-                                </h5>
-                                <h6
-                                    class="item-subtitle mt-1 display-7"
-                                >
-                                    <em>{{ _("Release date: %(date)s", date="2 AUG 2020 ??") }}</em>
-                                </h6>
-                                <p
-                                    class="mbr-text mt-3 display-7"
-                                >
-                                    {{ _("Toonier then ever, presenting to you: The <b>Toon</b> Boi!") }}
-                                </p>
-                            </div>
-                            <div class="mbr-section-btn item-footer mt-2">
-                                <a
-                                    href="{{ url_for('content.avatar', avatar_type='toon') }}"
-                                    class="btn item-btn btn-success display-7"
-                                    ><span
-                                        class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                                    ></span
-                                    >{{ _("Download") }}</a
-                                >
+                                <div class="item-content">
+                                    <h5 class="item-title display-5">
+                                        <strong>{{ _("Bestboi Toon") }}</strong>
+                                    </h5>
+                                    <p class="item-subtitle mt-1 display-7">
+                                        <em>{{ _("Release date: %(date)s", date="2 AUG 2020 ??") }}</em>
+                                    </p>
+                                    <p class="mbr-text mt-3 display-7">
+                                        {{ _("Toonier then ever, presenting to you: The <b>Toon</b> Boi!") }}
+                                    </p>
+                                </div>
+                                <div class="mbr-section-btn item-footer mt-2">
+                                    <a href="{{ url_for("content.avatar", avatar_type="toon") }}"
+                                       class="btn item-btn btn-success display-7">
+                                        <span class="material material-file-download mbr-iconfont mbr-iconfont-btn"></span>
+                                        {{ _("Download") }}
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div
-                        class="embla__slide slider-image item"
-                        style="margin-left: 1rem; margin-right: 1rem"
-                    >
-                        <div class="slide-content">
-                            <div class="item-img">
-                                <div class="item-wrapper">
-                                    <a href="{{ url_for('content.avatar', avatar_type='classic') }}"
-                                        ><img
-                                            src="{{ url_for('static', filename='img/bestboi-classic-thumbnail-1080x1080.png') }}"
-                                            alt="Classic BB"
-                                            title=""
-                                            data-slide-to="4"
-                                            data-bs-slide-to="4"
-                                    /></a>
+                        <div class="embla__slide slider-image item"
+                             style="margin-left: 1rem;
+                                    margin-right: 1rem">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper">
+                                        <a href="{{ url_for("content.avatar", avatar_type="classic") }}">
+                                            <img src="{{ url_for("static", filename="img/bestboi-classic-thumbnail-1080x1080.png") }}"
+                                                 alt="{{ _("Bestboi Classic") }}" />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item-content">
-                                <h5
-                                    class="item-title display-5"
-                                >
-                                    <strong>{{ _("Bestboi Classic") }}</strong>
-                                </h5>
-                                <h6
-                                    class="item-subtitle mt-1 display-7"
-                                >
-                                    <em>{{ _("Release date: %(date)s", date="2018") }}</em>
-                                </h6>
-                                <p
-                                    class="mbr-text mt-3 display-7"
-                                >
-                                    {{ _("The model it all began with, the first of 'em!") }}<br />
-                                </p>
-                            </div>
-                            <div class="mbr-section-btn item-footer mt-2">
-                                <a
-                                    href="{{ url_for('content.avatar', avatar_type='classic') }}"
-                                    class="btn item-btn btn-success display-7"
-                                    ><span
-                                        class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                                    ></span
-                                    >{{ _("Download") }}</a
-                                >
+                                <div class="item-content">
+                                    <h5 class="item-title display-5">
+                                        <strong>{{ _("Bestboi Classic") }}</strong>
+                                    </h5>
+                                    <p class="item-subtitle mt-1 display-7">
+                                        <em>{{ _("Release date: %(date)s", date="2018") }}</em>
+                                    </p>
+                                    <p class="mbr-text mt-3 display-7">{{ _("The model it all began with, the first of 'em!") }}</p>
+                                </div>
+                                <div class="mbr-section-btn item-footer mt-2">
+                                    <a href="{{ url_for("content.avatar", avatar_type="classic") }}"
+                                       class="btn item-btn btn-success display-7">
+                                        <span class="material material-file-download mbr-iconfont mbr-iconfont-btn"></span>
+                                        {{ _("Download") }}
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div
-                        class="embla__slide slider-image item"
-                        style="margin-left: 1rem; margin-right: 1rem"
-                    >
-                        <div class="slide-content">
-                            <div class="item-img">
-                                <div class="item-wrapper">
-                                    <img
-                                        src="{{ url_for('static', filename='img/beach-custom...-07-01-2021-12-34-28-1158x1158.png') }}"
-                                        alt="Retro BB"
-                                        title=""
-                                        data-slide-to="5"
-                                        data-bs-slide-to="5"
-                                    />
+                        <div class="embla__slide slider-image item"
+                             style="margin-left: 1rem;
+                                    margin-right: 1rem">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper">
+                                        <img src="{{ url_for("static", filename="img/beach-custom...-07-01-2021-12-34-28-1158x1158.png") }}"
+                                             alt="{{ _("Bestboi Low-Poly") }}" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="item-content">
-                                <h5
-                                    class="item-title display-5"
-                                >
-                                    <strong>{{ _("Bestboi Low-Poly") }}</strong>
-                                </h5>
-                                <h6
-                                    class="item-subtitle mt-1 display-7"
-                                >
-                                    <em>{{ _("Release date: %(date)s", date="7 JAN 2021") }}</em>
-                                </h6>
-                                <p
-                                    class="mbr-text mt-3 display-7"
-                                >
-                                    {{ _("A <b>low-poly</b> and fully quest-compatible VRChat model in a classic style reminiscent of old video games.") }}
-                                </p>
-                            </div>
-                            <div class="mbr-section-btn item-footer mt-2">
-                                <a
-                                    href="{{ url_for('content.avatar', avatar_type='low-poly') }}"
-                                    class="btn item-btn btn-success display-7"
-                                    ><span
-                                        class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                                    ></span
-                                    >{{ _("Download") }}</a
-                                >
+                                <div class="item-content">
+                                    <h5 class="item-title display-5">
+                                        <strong>{{ _("Bestboi Low-Poly") }}</strong>
+                                    </h5>
+                                    <p class="item-subtitle mt-1 display-7">
+                                        <em>{{ _("Release date: %(date)s", date="7 JAN 2021") }}</em>
+                                    </p>
+                                    <p class="mbr-text mt-3 display-7">
+                                        {{ _("A <b>low-poly</b> and fully quest-compatible VRChat model in a classic style reminiscent of old video games.") }}
+                                    </p>
+                                </div>
+                                <div class="mbr-section-btn item-footer mt-2">
+                                    <a href="{{ url_for("content.avatar", avatar_type="low-poly") }}"
+                                       class="btn item-btn btn-success display-7">
+                                        <span class="material material-file-download mbr-iconfont mbr-iconfont-btn"></span>
+                                        {{ _("Download") }}
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <button class="embla__button embla__button--prev">
+                    <span class="mobi-mbri mobi-mbri-arrow-prev mbr-iconfont"
+                          aria-hidden="true"></span>
+                    <span class="sr-only visually-hidden visually-hidden">{{ _("Previous") }}</span>
+                </button>
+                <button class="embla__button embla__button--next">
+                    <span class="mobi-mbri mobi-mbri-arrow-next mbr-iconfont"
+                          aria-hidden="true"></span>
+                    <span class="sr-only visually-hidden visually-hidden">{{ _("Next") }}</span>
+                </button>
             </div>
-            <button class="embla__button embla__button--prev">
-                <span
-                    class="mobi-mbri mobi-mbri-arrow-prev mbr-iconfont"
-                    aria-hidden="true"
-                ></span>
-                <span class="sr-only visually-hidden visually-hidden"
-                    >{{ _("Previous") }}</span
-                >
-            </button>
-            <button class="embla__button embla__button--next">
-                <span
-                    class="mobi-mbri mobi-mbri-arrow-next mbr-iconfont"
-                    aria-hidden="true"
-                ></span>
-                <span class="sr-only visually-hidden visually-hidden"
-                    >{{ _("Next") }}</span
-                >
-            </button>
         </div>
-    </div>
-</section>
-
-{#<section
+    </section>
+    {#<section
     data-bs-version="5.1"
     class="info3 cid-t7ZTdx6EzW mbr-parallax-background"
     id="info3-1d"
@@ -440,7 +295,7 @@
                         <div class="mbr-section-btn mt-3">
                             <a
                                 class="btn btn-success display-4"
-                                href="{{ url_for('content.clothing') }}"
+                                href="{{ url_for("content.clothing") }}"
                                 ><span
                                     class="fas fa-fw fa-tshirt mbr-iconfont mbr-iconfont-btn"
                                 ></span
@@ -453,60 +308,38 @@
         </div>
     </div>
 </section>#}
-
-<section
-    data-bs-version="5.1"
-    class="features3 cid-t9esiMPOlo"
-    id="features3-2y"
->
-    <div class="container">
-        <div class="mbr-section-head">
-            <h4
-                class="mbr-section-title align-center mb-0 display-2"
-            >
-                <strong>{{ _("Community Models") }}</strong>
-            </h4>
-            <h5
-                class="mbr-section-subtitle align-center mb-0 mt-2 display-5"
-            >
-                {{ _("Models made by talented creators!") }}
-            </h5>
-        </div>
-        <div class="row mt-4">
-            <div class="item features-image col-12 col-md-6 col-lg-12">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/bestboi-display-comms-4k-26-01-2021-23-29-44-1256x707.png') }}"
-                            alt="Dutchie"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-5">
-                            <strong
-                                >Dutch Angel Dragon - Bestboi HD Edit</strong
-                            >
-                        </h5>
-
-                        <p class="mbr-text mt-3 display-7">
-                            A very nice and well-made edit of the Bestboi HD
-                            Edition by Sequential_ShutLock and VictonRoy<br />
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a
-                            href="{{ url_for('content.avatar', avatar_type='dutchie') }}"
-                            class="btn item-btn btn-success display-7"
-                            ><span
-                                class="fas fa-fw fa-download mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Download") }}</a
-                        >
+    <section data-bs-version="5.1"
+             class="features3 cid-t9esiMPOlo"
+             id="community-models">
+        <div class="container">
+            <div class="mbr-section-head">
+                <h4 class="mbr-section-title align-center mb-0 display-2">
+                    <strong>{{ _("Community Models") }}</strong>
+                </h4>
+                <h5 class="mbr-section-subtitle align-center mb-0 mt-2 display-5">{{ _("Models made by talented creators!") }}</h5>
+            </div>
+            <div class="row mt-4">
+                <div class="item features-image col-12 col-md-6 col-lg-12">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ url_for("static", filename="img/BestboiDutchie-meta.png") }}"
+                                 alt="Dutchie" />
+                        </div>
+                        <div class="item-content">
+                            <h5 class="item-title display-5">
+                                <strong>{{ _("Dutch Angel Dragon - Bestboi HD Edit") }}</strong>
+                            </h5>
+                            <p class="mbr-text mt-3 display-7">
+                                {{ _("A very nice and well-made edit of the Bestboi HD Edition by <b>Sequential_ShutLock</b> and <b>VictonRoy</b>") }}
+                            </p>
+                        </div>
+                        <div class="mbr-section-btn item-footer mt-2">
+                            <a href="{{ url_for("content.avatar", avatar_type="dutchie") }}"
+                               class="btn item-btn btn-success display-7"><span class="fas fa-fw fa-download mbr-iconfont mbr-iconfont-btn"></span>{{ _("Download") }}</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 {% endblock %}

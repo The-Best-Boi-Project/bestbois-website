@@ -1,97 +1,27 @@
-{% extends 'base.html.jinja' %}
-
+{% extends "base.html.jinja" %}
 {% block title %}{{ _("Bestboi Kemono") }}{% endblock %}
-
 {% block content %}
-
-<section
-    data-bs-version="5.1"
-    class="header1 cid-v8v4yUMxzk mbr-fullscreen mbr-parallax-background"
-    id="header1-68"
->
-    <div
-        class="mbr-overlay"
-        style="opacity: 0.8; background-color: rgb(35, 35, 35)"
-    ></div>
-
-    <div class="align-center container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-12">
-                <h1 class="mbr-section-title mb-3 display-1">
-                    <strong>{{ _("Bestboi Kemono") }}</strong>
-                </h1>
-
-                <p class="mbr-text display-7">
-                    <em
-                        >The newest of the bunch, a cute kemono-styled
-                        Bestboi!</em
-                    ><br /><br />3D preview unavailable
-                </p>
-                <div class="mbr-section-btn mt-3">
-                    <a class="btn btn-success display-4" href="#features3-62"
-                        ><span
-                            class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                        ></span
-                        >Download</a
-                    >
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section
-    data-bs-version="5.1"
-    class="features3 cid-v8uYxA1Yl8"
-    id="features3-62"
->
-    <div class="container">
-        <div class="mbr-section-head">
-            <h4
-                class="mbr-section-title align-center mb-0 display-2"
-            >
-                <strong>Kemono Downloads</strong>
-            </h4>
-            <h5
-                class="mbr-section-subtitle align-center mb-0 mt-2 display-5"
-            >
-                All Models are completely free, but please donate if you are
-                able to so we can deliver more content to you!
-            </h5>
-        </div>
-        <div class="row mt-4">
-            <div class="item features-image col-12 col-md-6 col-lg-12 active">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/bestboikemono-tem222p-474x474.png') }}"
-                            alt="Kemono"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-5">
-                            <strong>Kemono (VRChat Ready)</strong>
-                        </h5>
-
-                        <p class="mbr-text mt-3 display-7">
-                            A unity package already preconfigured with the boi
-                            for easy uploading and editing<br />
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a
-                            href="https://zexc.gumroad.com/l/BestboiKemono"
-                            class="btn item-btn btn-success display-7"
-                            ><span
-                                class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Download on %(platform)s", platform="Gumroad") }}</a
-                        >
+    <section data-bs-version="5.1"
+             class="header1 cid-v8v4yUMxzk mbr-fullscreen mbr-parallax-background"
+             id="header1-68">
+        <div class="mbr-overlay"
+             style="opacity: 0.8;
+                    background-color: rgb(35, 35, 35)"></div>
+        <div class="align-center container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-12">
+                    <h1 class="mbr-section-title mb-3 display-1">
+                        <strong>{{ _("Bestboi Kemono") }}</strong>
+                    </h1>
+                    <p class="mbr-text display-7">
+                        {{ _("The newest of the bunch, a cute <b>kemono</b>-styled bestboi!") }}
+                    </p>
+                    <div class="mbr-section-btn mt-3">
+                        <a class="btn btn-success display-4"
+                           href="https://zexc.gumroad.com/l/BestboiKemono"><span class="material material-file-download mbr-iconfont mbr-iconfont-btn"></span>{{ _("Download") }}</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 {% endblock %}

@@ -1,97 +1,28 @@
-{% extends 'base.html.jinja' %}
-
+{% extends "base.html.jinja" %}
 {% block title %}Bestboi Dutch Angel Dragon{% endblock %}
-
 {% block content %}
-
-<section
-    data-bs-version="5.1"
-    class="header1 cid-t9f4Stj6nu mbr-fullscreen mbr-parallax-background"
-    id="header1-3k"
->
-    <div
-        class="mbr-overlay"
-        style="opacity: 0.8; background-color: rgb(35, 35, 35)"
-    ></div>
-
-    <div class="align-center container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-12">
-                <h1 class="mbr-section-title mb-3 display-1">
-                    <strong>Bestboi HD Dutchie</strong>
-                </h1>
-
-                <p class="mbr-text display-7">
+    <section data-bs-version="5.1"
+             class="header1 cid-t9f4Stj6nu mbr-fullscreen mbr-parallax-background"
+             id="header1-3k">
+        <div class="mbr-overlay"
+             style="opacity: 0.8;
+                    background-color: rgb(35, 35, 35)"></div>
+        <div class="align-center container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-12">
+                    <h1 class="mbr-section-title mb-3 display-1">
+                        <strong>{{ _("Bestboi HD Dutchie") }}</strong>
+                    </h1>
+                    {#<p class="mbr-text display-7">
                     <em>A cute dutchie based on the Bestboi HD model<br /></em
                     >3d preview unavailable
-                </p>
-                <div class="mbr-section-btn mt-3">
-                    <a
-                        class="btn btn-success display-4"
-                        href="#features3-2q"
-                        ><span
-                            class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                        ></span
-                        >Download</a
-                    >
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section
-    data-bs-version="5.1"
-    class="features3 cid-t8RAUSwVC4"
-    id="features3-2q"
->
-    <div class="container">
-        <div class="mbr-section-head">
-            <h4
-                class="mbr-section-title align-center mb-0 display-2"
-            >
-                <strong>Dutchie Downloads</strong>
-            </h4>
-            <h5
-                class="mbr-section-subtitle align-center mb-0 mt-2 display-5"
-            >
-                All models are completely free, but please donate if you are
-                able to so we can deliver more content to you!
-            </h5>
-        </div>
-        <div class="row mt-4">
-            <div class="item features-image col-12 col-md-6 col-lg-12">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img
-                            src="{{ url_for('static', filename='img/bestboi-display-comms-4k-26-01-2021-23-29-44-1256x707.png') }}"
-                            alt="Dutchie"
-                        />
-                    </div>
-                    <div class="item-content">
-                        <h5 class="item-title display-5">
-                            <strong>Classic (VRChat Ready)</strong>
-                        </h5>
-
-                        <p class="mbr-text mt-3 display-7">
-                            A unity package already preconfigured with the boi
-                            for easy uploading and editing<br />
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn item-footer mt-2">
-                        <a
-                            href="https://zexc.gumroad.com/l/BestboiDutchie"
-                            class="btn item-btn btn-success display-7"
-                            ><span
-                                class="material material-file-download mbr-iconfont mbr-iconfont-btn"
-                            ></span
-                            >{{ _("Download on %(platform)s", platform="Gumroad") }}</a
-                        >
+                </p>#}
+                    <div class="mbr-section-btn mt-3">
+                        <a class="btn btn-success display-4"
+                           href="https://zexc.gumroad.com/l/BestboiDutchie"><span class="material material-file-download mbr-iconfont mbr-iconfont-btn"></span>{{ _("Download") }}</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 {% endblock %}

@@ -1,54 +1,29 @@
-{% extends 'base.html.jinja' %}
-
+{% extends "base.html.jinja" %}
 {% block title %}{{ _("You want some tea?") }}{% endblock %}
-
 {% block content %}
-
-<section
-    data-bs-version="5.1"
-    class="header1 cid-to2RPBpsR9 mbr-fullscreen mbr-parallax-background"
-    id="header1-3r"
->
-    <div
-        class="mbr-overlay"
-        style="opacity: 0.8; background-color: rgb(35, 35, 35)"
-    ></div>
-
-    <div class="align-center container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-4">
-                <img
-                    src="{{ url_for('static', filename='img/TeaBoi.png') }}"
-                    alt="{{ _("Ah yes, this is scrumptious") }}"
-                    height="380"
-                />
-
-                <h1 class="mbr-section-title mb-3 display-1">
-                    <strong>418</strong>
-                </h1>
-
-                <p class="mbr-text display-7">{{ _("I'm a teapot") }}</p>
-
-                <div class="mbr-section-btn mt-3">
-                    <a
-                        class="btn btn-success display-4"
-                        href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418"
-                        ><span
-                            class="fas fa-fw fa-info-circle mbr-iconfont mbr-iconfont-btn"
-                        ></span
-                        >{{ _("More about HTTP 418") }}</a
-                    >
-
-                    <a class="btn btn-success display-4" href="{{ url_for('core.index') }}"
-                        ><span
-                            class="material material-home mbr-iconfont mbr-iconfont-btn"
-                        ></span
-                        >{{ _("Return Home") }}</a
-                    >
+    <section data-bs-version="5.1"
+             class="header1 cid-to2RPBpsR9 mbr-fullscreen mbr-parallax-background"
+             id="header1-3r">
+        <div class="mbr-overlay"
+             style="opacity: 0.8;
+                    background-color: rgb(35, 35, 35)"></div>
+        <div class="align-center container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-4">
+                    <img src="{{ url_for("static", filename="img/TeaBoi.png") }}"
+                         alt="{{ _("Ah yes, this is scrumptious") }}"
+                         height="380" />
+                    <h1 class="mbr-section-title mb-3 display-1">
+                        <strong>418</strong>
+                    </h1>
+                    <p class="mbr-text display-7">{{ _("I'm a teapot") }}</p>
+                    <div class="mbr-section-btn mt-3">
+                        <a class="btn btn-success display-4"
+                           href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418"><span class="fas fa-fw fa-info-circle mbr-iconfont mbr-iconfont-btn"></span>{{ _("More about HTTP 418") }}</a>
+                        <a class="btn btn-success display-4" href="{{ url_for("core.index") }}"><span class="material material-home mbr-iconfont mbr-iconfont-btn"></span>{{ _("Return Home") }}</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 {% endblock %}

@@ -1,51 +1,59 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>{% block title %}{{ _("Bestbois") }}{% endblock %}</title>
-    <meta name="twitter:title" content="Commissions">
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image:src" content="{{ url_for('static', filename='img/Commissions-meta.png') }}">
-    <meta property="og:image" content="{{ url_for('static', filename='img/Commissions-meta.png') }}">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='img/android-chrome-512x512-128x128-1.png') }}" type="image/x-icon">
-    {# <meta name="description" content=""> #}
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/dropdown.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/fa-brands.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/fa-solid.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/jarallax.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/material-icons.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/mbr-additional.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobirise-icons-bold/mobirise-icons-bold.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobirise-icons2/mobirise2.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/socicon.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-
-<body>
-    {% include 'parts/nav.html.jinja' %}
-
-    {% block content %}{% endblock %}
-
-    {% include 'parts/footer.html.jinja' %}
-    {% include 'parts/to-top-btn.html.jinja' %}
-
-    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/embla.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/embla.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/jarallax.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/navbar-dropdown.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/smooth-scroll.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/theme.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/yt-player.js') }}"></script>
-</body>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{{ _("Bestbois") }}{% endblock %}</title>
+        <meta name="twitter:title" content="Commissions">
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image:src"
+              content="{{ url_for("static", filename="img/Commissions-meta.png") }}">
+        <meta property="og:image"
+              content="{{ url_for("static", filename="img/Commissions-meta.png") }}">
+        <link rel="shortcut icon"
+              href="{{ url_for("static", filename="img/icon.png") }}"
+              type="image/x-icon">
+        {# <meta name="description" content=""> #}
+        <link rel="stylesheet"
+              href="{{ url_for("static", filename="css/animate.css") }}">
+        <link rel="stylesheet"
+              href="{{ url_for("static", filename="css/bootstrap.min.css") }}">
+        <link rel="stylesheet"
+              href="{{ url_for("static", filename="css/dropdown.css") }}">
+        <link rel="stylesheet"
+              href="{{ url_for("static", filename="css/fa-brands.min.css") }}">
+        <link rel="stylesheet"
+              href="{{ url_for("static", filename="css/fa-solid.min.css") }}">
+        <link rel="stylesheet"
+              href="{{ url_for("static", filename="css/fontawesome.min.css") }}">
+        <link rel="stylesheet"
+              href="{{ url_for("static", filename="css/jarallax.css") }}">
+        <link rel="stylesheet"
+              href="{{ url_for("static", filename="css/material-icons.min.css") }}">
+        <link rel="stylesheet"
+              href="{{ url_for("static", filename="css/mbr-additional.css") }}">
+        <link rel="stylesheet"
+              href="{{ url_for("static", filename="css/mobirise-icons-bold/mobirise-icons-bold.css") }}">
+        <link rel="stylesheet"
+              href="{{ url_for("static", filename="css/mobirise-icons2/mobirise2.css") }}">
+        <link rel="stylesheet"
+              href="{{ url_for("static", filename="css/socicon.css") }}">
+        <link rel="stylesheet"
+              href="{{ url_for("static", filename="css/styles.css") }}">
+    </head>
+    <body>
+        {% include "components/nav.html.jinja" %}
+        {% block content %}{% endblock %}
+        {% include "components/footer.html.jinja" %}
+        {% include "components/scroll_to_top.html.jinja" %}
+        <script src="{{ url_for("static", filename="js/bootstrap.bundle.min.js") }}"></script>
+        <script src="{{ url_for("static", filename="js/embla.min.js") }}"></script>
+        <script src="{{ url_for("static", filename="js/embla.js") }}"></script>
+        <script src="{{ url_for("static", filename="js/jarallax.js") }}"></script>
+        <script src="{{ url_for("static", filename="js/navbar-dropdown.js") }}"></script>
+        <script src="{{ url_for("static", filename="js/smooth-scroll.js") }}"></script>
+        <script src="{{ url_for("static", filename="js/theme.js") }}"></script>
+        <script src="{{ url_for("static", filename="js/yt-player.js") }}"></script>
+    </body>
 </html>
