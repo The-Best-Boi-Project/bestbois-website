@@ -1,3 +1,25 @@
+#team-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#team-buttons > a {
+	display: flex;
+	flex-direction: row-reverse;
+	gap: 0.5em;
+
+	font-family: 'Arvo', serif;
+	font-size: 1.1rem;
+	line-height: 1.5;
+
+	border-radius: 100px;
+}
+
+#team-buttons > a > span {
+	font-size: 1.25em;
+}
 
 .team-title {
 	padding: 1.5rem 0;
@@ -77,6 +99,10 @@
 
 @media (max-width: 767px) {
 
+	.team-title h4 {
+		font-size: 11vw;
+	}
+
 	.team-card-container .image-wrapper {
 		min-height: 160px;
 		width: 30%;
@@ -97,6 +123,12 @@
 }
 
 @media (max-width: 384px) {
+
+	#team-buttons > a {
+		border-radius: 25px;
+		flex-direction: column;
+		width: 100%;
+	}
 
 	/* Vertical cards */
 
