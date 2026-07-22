@@ -29,7 +29,7 @@ The configuration is stored in [pyproject.toml](pyproject.toml).
 Run the development server using the following command from the root directory:
 
 ```sh
-flask --app app run --debug
+flask run --debug
 ```
 
 ## Committing

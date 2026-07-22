@@ -1,9 +1,8 @@
-from datetime import datetime, timezone
-
 from flask import Flask
 
 from .config import mapping as m
 from .i18n import babel, get_locale
+from .utils import time
 from .views import content, core, error_pages
 
 
@@ -19,9 +18,6 @@ def create_app() -> Flask:
 
     @app.context_processor
     def utility_processor():
-        def now(utc: bool = True):
-            return datetime.now(timezone.utc if utc else None)
-
-        return {'now': now}
+        return {'now': time.now}
 
     return app
