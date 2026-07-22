@@ -9863,41 +9863,6 @@ a {
 	}
 }
 
-.team-title {
-	padding-top: 2rem;
-	padding-bottom: 0rem;
-	background-color: #232323;
-}
-
-.team-title .mbr-fallback-image.disabled {
-	display: none;
-}
-
-.team-title .mbr-fallback-image {
-	display: block;
-	background-size: cover;
-	background-position: center center;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-}
-
-.team-title .mbr-text,
-.team-title .mbr-section-btn {
-	color: #232323;
-}
-
-.team-title .card-title,
-.team-title .card-box {
-	color: #ffffff;
-}
-
-.team-title .mbr-text,
-.team-title .link-wrap {
-	color: #ffffff;
-}
-
 .team-members-director {
 	padding-top: 6rem;
 	padding-bottom: 6rem;

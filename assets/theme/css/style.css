@@ -964,6 +964,20 @@ blockquote {
 
 /* -------- Custom styles for MeetTheTeam -------- */
 
+.team-title {
+	padding: 1.5rem 0;
+	background-color: #232323;
+	color: #fff;
+}
+
+.team-title h4 {
+	font-family: 'Arvo', serif;
+	font-weight: bold;
+	font-size: 5rem;
+	text-align: center;
+	margin: 0;
+}
+
 .team-card-container .card {
 	flex-direction: row;
 	align-items: center;
